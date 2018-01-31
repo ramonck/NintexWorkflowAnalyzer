@@ -1,0 +1,5 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.NestedLogInLoopChecker\obj\Debug\WorkflowAnalyzer.NestedLogInLoopChecker.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.NestedLogInLoopChecker.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.NestedLogInLoopChecker.pdb
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.NestedLogInLoopChecker\obj\Debug\WorkflowAnalyzer.NestedLogInLoopChecker.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.NestedLogInLoopChecker\obj\Debug\WorkflowAnalyzer.NestedLogInLoopChecker.pdb

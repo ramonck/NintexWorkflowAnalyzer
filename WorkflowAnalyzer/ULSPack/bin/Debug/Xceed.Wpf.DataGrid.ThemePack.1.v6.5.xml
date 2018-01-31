@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Xceed.Wpf.DataGrid.ThemePack.1.v6.5</name>
+  </assembly>
+  <members>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.Office2007BlackTheme">
+      <summary>Represents the black Office 2007 theme, which blends perfectly into any Office 2007-like application (see also ElementalBlackTheme).</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.Office2007BlueTheme">
+      <summary>Represents the blue Office 2007 theme, which blends perfectly into any Office 2007-like application (see also ElementalBlueTheme).</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.Office2007SilverTheme">
+      <summary>Represents the silver Office 2007 theme, which blends perfectly into any Office 2007-like application (see also ElementalSilverTheme).</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.WMP11Theme">
+      <summary>Represents the Windows Media Player 11 theme.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.Office2007BlackTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>Office2007BlackTheme</strong> class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.Office2007BlueTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>Office2007BlueTheme</strong> class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.Office2007SilverTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>Office2007SilverTheme</strong> class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.WMP11Theme.#ctor">
+      <summary>Initializes a new instance of the <strong>WMP11Theme</strong> class.</summary>
+    </member>
+  </members>
+</doc>

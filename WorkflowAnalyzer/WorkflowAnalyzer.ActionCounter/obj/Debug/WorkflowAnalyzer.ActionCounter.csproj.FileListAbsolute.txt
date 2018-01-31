@@ -1,0 +1,5 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.ActionCounter\obj\Debug\WorkflowAnalyzer.ActionCounter.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.ActionCounter.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.ActionCounter.pdb
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.ActionCounter\obj\Debug\WorkflowAnalyzer.ActionCounter.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.ActionCounter\obj\Debug\WorkflowAnalyzer.ActionCounter.pdb

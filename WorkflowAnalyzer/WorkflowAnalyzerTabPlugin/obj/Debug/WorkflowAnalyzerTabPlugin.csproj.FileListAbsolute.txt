@@ -2,7 +2,7 @@ D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnal
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\bin\Debug\__TemplateIcon.ico
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\bin\Debug\WorkflowAnalyzerTabPlugin.vsix
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\bin\Debug\extension.vsixmanifest
-D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\obj\Debug\WorkflowAnalyzerTabPlugin.csprojResolveAssemblyReference.cache
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\obj\Debug\WorkflowAnalyzerTabPlugin.dll
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\obj\Debug\WorkflowAnalyzerTabPlugin.pdb
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\obj\Debug\extension.vsixmanifest
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerTabPlugin\obj\Debug\WorkflowAnalyzerTabPlugin.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.BatchChecker\obj\Debug\WorkflowAnalyzer.BatchChecker.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.BatchChecker.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.BatchChecker.pdb
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.BatchChecker\obj\Debug\WorkflowAnalyzer.BatchChecker.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.BatchChecker\obj\Debug\WorkflowAnalyzer.BatchChecker.pdb

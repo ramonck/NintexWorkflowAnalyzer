@@ -1,0 +1,34 @@
+BODY {
+    font:x-small'Verdana';
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size: 50%;
+}
+.PassedCheck {
+    padding: 10px 40px;
+    background-color: #3dbdee;
+    width: 550px;
+}
+.FailedCheck {
+    padding: 10px 40px;
+    background-color: #ffc72a;
+    width: 550px;
+}
+.Name {
+    font-size: 18px;
+    font-family: Verdana;
+    color: #ffffff
+}
+.Url {
+    font-family: Arial;
+    font-size: 16px;
+}
+.Parameters {
+    font-family: Arial;
+    font-size: 16px;
+}
+.Description {
+    font-family: Arial;
+    font-size: 16px;
+}

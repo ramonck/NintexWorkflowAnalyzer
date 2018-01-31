@@ -1,0 +1,2189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WorkflowAnalyzer.exe" version="1.4.0.39" publicKeyToken="0000000000000000" language="en" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="5.ico" asmv2:publisher="Aaron Labiosa" asmv2:product="Workflow Analyzer" asmv2:supportUrl="http://workflowanalyzer.codeplex.com/" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WorkflowAnalyzer" version="1.0.6605.26811" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="WorkflowAnalyzer.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PluginManager.dll" size="37376">
+      <assemblyIdentity name="PluginManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B9wU03gIAfja/eVtFJZ4qv39HbAdjQZpnKpZzORsjPY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScintillaNET.dll" size="1368064">
+      <assemblyIdentity name="ScintillaNET" version="3.6.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rQzFpNSmquBu42AznIUYkrdLiidc6JwbSBhWchefMWM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SupportPackage.dll" size="88576">
+      <assemblyIdentity name="SupportPackage" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5pU/istnwkIBQm2A8Z7PHyIRmMnBxs5nRGjzhdKaQWg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ULSPack.dll" size="75776">
+      <assemblyIdentity name="ULSPack" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GCOqjqhHyFAMUWmEFRFCHUd1fMwzYv1ELyMbdBnzlIY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WorkflowAnalyzer.exe" size="225792">
+      <assemblyIdentity name="WorkflowAnalyzer" version="1.0.6605.26811" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Pg3hcujhUPaU63KnrwvQUwD+zN2vWWSTQ5eUdlrmvVc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.Controls.v6.5.dll" size="200192">
+      <assemblyIdentity name="Xceed.Wpf.Controls.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>A6sDS3Z7M5ESxBmigWgb6Wared5jifn9FDKkqVJ9gjA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.Controls.v6.5.XmlSerializers.dll" size="16384">
+      <assemblyIdentity name="Xceed.Wpf.Controls.v6.5.XmlSerializers" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+4x6JkHqt5Ge9Bu2YGU3ET+74VwCtHq3SmZtV7IztkA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.ThemePack.1.v6.5.dll" size="1103360">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.ThemePack.1.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vkOKxJss7rsPJAjmAsAZJgb147ETpUu0yfumsLh8LZo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.ThemePack.2.v6.5.dll" size="304128">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.ThemePack.2.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dDyq0uJiq9FsFIq1rSeWveeOMWWB4H5cqvw8YUrU2eg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.ThemePack.3.v6.5.dll" size="410624">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.ThemePack.3.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r4BGF8kL9DJRnp16d6v2ZQZYa6GICqMk6HLXPaKe3T8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.ThemePack.4.v6.5.dll" size="260096">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.ThemePack.4.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>flUxyPDPr+aiFOp5Mqtz9+3UEPvai/998w0Ml93iIKY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.ThemePack.5.v6.5.dll" size="235520">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.ThemePack.5.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>t0q1tZTMwH02rTyxbgH3T0pAwoK43U6+mqqdZdGneDE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.v6.5.dll" size="5174272">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LEda79AHLV9FF8XFjKMePZqL+aipeLEo4Gmelbmo3I8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.v6.5.XmlSerializers.dll" size="333824">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.v6.5.XmlSerializers" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>M249I/vU8tS/VVoFuLp9eb5WlsLTOgxkUSupsJkBOaw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.Views3D.v6.5.dll" size="333824">
+      <assemblyIdentity name="Xceed.Wpf.DataGrid.Views3D.v6.5" version="6.5.18059.19030" publicKeyToken="BA83FF368B7563C6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Pk3ORthKqnWRVcCjWPznBtZ1Bjo92SBpcYUGV0GlUJk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="4.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TP6V6DDg4ILr9HwvDfVCih5LxyzRIYzQslTEx15Jbkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="5.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IY37ENSpNs5GqKi2I4iFsJ6IDgRCPxNeYSMfj6uJ8sk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Asset_Directory.txt" size="3">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\css\BPA_CSS.css" size="625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Rmv8fYG6768/1VT0FGAPT4W0arXRfcuNn94nW4eKS4c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\css\ui-lightness\jquery-ui-1.10.4.css" size="32189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J3XOfsD2GxbuhCNOvLq5MxV1aoPs+qo+cCKrj0FWhJ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\css\ui-lightness\jquery-ui-1.10.4.min.css" size="27276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q1gtLv+G5RDObGPz5lvga9/HyTqrklIEu35edIz6kzo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Image\Error.png" size="1716">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+3iCDbgXMjSrg0HwApQHAAhIQhgRRlronMxJ2xKNfZE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Image\Success.png" size="1794">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YqJ1xpry6obEaq7oThqKlaCOlB8Xth5aNc5FeZWEkaE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\js\BPA_JS.js" size="498">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>95Slp6VSTmGERWuovKp/dhD9OTneE4Ca7P/ZZKin8SE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\js\Forms.js" size="63">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DWeHzvDwOvSx6T/l2aXN7GpYN3ikdkeCIx/ZkM4OCrY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\js\jquery-1.10.2.js" size="273199">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>it5nQKHTz+34HijZJQkpNBIHsjpV8b6QzMJs9tmOBSo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\js\jquery-ui-1.10.4.js" size="436715">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kVTcaYhzm2MuQuhXS1dUzzMNikFKVRcWlwXkv6A9SfM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\js\jquery-ui-1.10.4.min.js" size="228539">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YAdZQH/eMv9706zI24pB8XChN8i/SNKi7eNCERd2wCc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="BPA.xsl" size="3519">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lFKosfpq28BvXlgjNgh1JEIOuHjP1OAmW96Dhx1Wlkc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="defaultss.xsl" size="11391">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oF+v2nY+ZfsPsCWXTuc5jwLB6gsNWXsD6klBGSiu0lY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Forms.xsl" size="3400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iCGbKdbmWdbFP69yf8Bh//Tv9DeOx23IjaEUSjlyMyE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Graphical.css" size="13">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1j16TuWtLYQnyKCJTx69yW5EfGU+ZYTwGLAykYXT4iQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="graphical.xsl" size="82009">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oiSdvA85iHiJUE1WV8GnIE88m7qNGcN38GWnw/YM0ek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\AttachmentFormControlProperties.png" size="712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v155FIeUdYzwp72jAvhtPr8bGeZUmknNYvBPI64DOe4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\BooleanFormControlProperties.png" size="306">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>99aQkOPePO9Mza7K3HaC3vWRaCZHbTOkFOyKRhdWzTM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ButtonFormControlProperties.png" size="545">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PJfumyHIlLWy2AbeUFxgvH0Fv2nB9CaNMR8D8adeYJk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\CalculationFormControlProperties.png" size="546">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AZm/N+Oonr4IEi1mlvgwigQy8YDvb4aflV286EBnsRo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ChangeContentTypeFormControlProperties.png" size="504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y2rhqjJOT1AdRRIUC6PiI4pAMVCl3aGKFYOfE70QA44=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ChoiceFormControlProperties.png" size="378">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sgo4fZo01zXi5y9V3783h9zVQ0Dv83j+LILLqke0Yao=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\DateTimeFormControlProperties.png" size="248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ck2KQAxa5sFtY73S7IRaQFlDPNDrMxObT+c3qA1Sh6g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ExternalDataColumnControlProperties.png" size="447">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X71WI1NWBHjc2ynCMlPlT2OvQeDaWpdzKcbXjTzXdDA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\FrameFormControlProperties.png" size="812">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tIsAzUOboaXl6+EpYhFgmdQfSZSK4dK9kb3A/pCiYng=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\GeoLocationFormControlProperties.png" size="1309">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b3/8uShTFN0w1MBVcErZ0TRiWvxB1E1cihI3MfTAX/c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\HtmlFormControlProperties.png" size="833">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iG/VBk+G4g8njOiNIEQHVWaN4qXPGTqXXu052m8rvx0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\HyperLinkColumnFormControlProperties.png" size="1143">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iHa+nqvnM8/XXxlGwt3NGgtIV5CxA0lDNf8MCU9DpV8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ImageFormControlProperties.png" size="546">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f6g6XqZ3pOdXYyg8QtyGi2h3qt/4edPxACPVUWmjBko=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\LabelFormControlProperties.png" size="950">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>I9/uK1xeSMdZovj+uZh7XUvKV1oT5q0ryHyc/SJ3t8o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\LineFormControlProperties.png" size="190">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rS9nivc3DcJIx6B9gojLG+X0a4lIInd6ymptqkixrsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ListItemFormControlProperties.png" size="216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NAX/WX4ZaIuG1FUmpAtJdD+YqQ7i2d8avs0Zfl4BpRM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ListViewFormControlProperties.png" size="637">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>evAGUOXr3LO6ovcCJwd81sVR/IQE1B3V1ZKWeu6WrBM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\MultiLineTextBoxFormControlProperties.png" size="411">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fHqcEKoXij/jvox2VquGGwjdie5xCckoI4G89lwKHe0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\PanelFormControlProperties.png" size="215">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NfXMqCL1YFN0DY02mNH3eaIHaLUq3sJDCYcFPPNaFRw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\PeoplePickerFormControlProperties.png" size="657">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TBhuGq4m96KjjEEqklJhfnoiOrOB89UdQMiVMUzco8o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\RepeaterFormControlProperties.png" size="431">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BBP+pykqOX7W+ZoxcbRjwVrNFsnCQZdtReojSamYgB0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\SharePointLookupFormControlProperties.png" size="515">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sMbimFeXUIxQGm7i50nkpFrbHgpCKQgKWNwTHkWDZ+U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\TaxonomyFormControlProperties.png" size="523">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3wcAihfpAf/eV6t3FLcpCxdC5J3rTfFFEbHIS8vlR4I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\TextBoxFormControlProperties.png" size="435">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gwS6v0SFZKETEJjKKcpLc92GBLuxkYwQCiCmt+rMuKU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="nfimages\ViewWorkflowFormControlProperties.png" size="811">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z7q1i+qqPUy8ApAsCjf8o4fT02zHHKIkxJAv063/p2M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\Install_Plugins_Here.txt" size="3">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.ActionCounter.dll" size="6144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>28VJUd0J2NczMrKl4UWVVWs6UU586kLzIoyBrFPaOGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.BatchChecker.dll" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jmOZ1ADUbnr/ezbRgr4cmzVPv/XoYjqfdw3P0is/X+I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.DBLogInLoopChecker.dll" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MdDFMxY0O8UqwHOzi/8ExcTKuvLcpvOBMCFFPXfWTBo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.NestedLogInLoopChecker.dll" size="6144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/FOrpNCxiq7+fdz9oNAUdb0qGkaGA1TDJk45TYo34yg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.ParallelChecker.dll" size="7680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Uk/Pfmu40qszEtqle/l/5ES1h/bCw9Hpgq31ygyfI2E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.RecursiveCheck.dll" size="6144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c14gthWwwmvILpEHIZcy8AgRM2H36BYZnqQYxVw0GP8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.StateMachineChecker.dll" size="9216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8n+srkg4wKx6TU9foSF6SBrUE/NUxSNPVz3QOocggBk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.StoredCredentialChecker.dll" size="6656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6dz9sE6F87cHsEXPfnWjAbCyLjjTbqDfnnYsPIVHkhs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.TimingChecker.dll" size="6656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>csPniRMUOp0r6sAgZa6YS+0pOTFkg80Zg6csAtS62RU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.VersionChecker.dll" size="6144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ssanWWe+5Wc40HHqSfGgIBatmO+oeTQTowp2M/5KSs0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Plugins\WorkflowAnalyzer.WorkflowSize.dll" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1NTNAY0okqFMT7le7h1aku3BsXasshotpobbCf6qmdk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ReadMe.txt" size="2000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yX9sRmJWHzs2J/2IY3y8PznrKcQfWrJoOIYC6GfXhSQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SciLexer.dll" size="656896">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>scxO2xU7XhtQSuFCqqDNFHy53Ayb8ycVA7xvUbGr1Tc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SciLexer64.dll" size="925696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YtyUDBimjwnbhw0E0AooPtWFQj8HfeawbN1XO8+z7IE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ScintillaNET.xml" size="256290" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m6UHgVQl0Dhs0/TK0K/OsKuvortY5+ADnr1skDftrD4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\AddToMemberGroup.png" size="2108">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rHNvRo4oizujX1jkDGWJMYOJSCTDD3ISQMdepfVCYIU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\CopyToWeb.gif" size="1754">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j+T3AwfpjspMMVhLLndVpckqmx2cS8b583U/OQUqC5U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\CreateMemberGroup.png" size="1894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5AWJOklFtvJdJ4/Sh5Ql5XWQKTELNlIJ8kBgiB97ATM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\CustomAction.png" size="1921">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k0Vm00AQ6dm19m56If/CymVnojBI0+Rqz7X/26EtuH8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\DeleteMemberGroup.png" size="2064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pcy8/+LcDduNXqhsxRe+IbVHPXXrem+BUy7aFvPYgcQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\downarrow.png" size="734">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>N1S/QRikTS6UMtDzx8bGnFVSFK6Qfx/u1pCd9bWcgS4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\EndWorkflow.png" size="1834">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tb2QmCR50cN0DxH6IRTRQ7QVn2L9yP6al9JITRT2FMg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\EndWorkflowMarker.png" size="1082">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P5x7zhpTG131B8wMX+5eoAm4HwhCQAYRN6dI9H63Mi4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\logo.jpg" size="32079">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OrChRB6tb3+CmgG6/kWphtaWSPAeVEfG9qXKOx6sw+o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\ManageWorkflows.png" size="1867">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5ZmQ/Sgr4wfnkvClEUNhnbjLWECxoC3+Rt8d+5/WK4M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWAddUserToADGroupAdapter.png" size="2430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rGIGs+7x7MQdbqhpEM3B9koS1z1K/wO0423zn9Ho90w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWApproverAdapter.png" size="2120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E+0D57FcsmfZV2aQ/rGa/yPSZzB0NSsUUwSqHEIZlAk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWAssignTodoTaskAdapter.png" size="2389">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nXwd6ekcBjdOFzm4ERE3LE4MddGQxE3RXmEuC3Gmujc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWBDCQueryAdapter.png" size="2227">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EcrJUapRyZ/g0Z87QvHLI7suJS/0OIGEEIIulq4hlG4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWBuildStringAdapter.png" size="1850">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h2bIgEGRUtXLMPPd0s/bbbe5HoSuvtP2RJwFStWgm7U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWBusinessProcessAdapter.png" size="2336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FA7dfRd25s+CvhES3F7ghuiZ8AyFu0MvSJ46dQSn/og=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCalculateDateAdapter.png" size="2062">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6xWTt78hb+5/Vevf7YjTqyERmS2JooumH0O838AyDGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCallWebServiceAdapter.png" size="2665">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CSdR5TZ6NiUu/cXOwqAs0gUEVpLiA9wZfKt69GuEYTQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCancelWorkflowAdapter.png" size="2055">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IoIwljoqB2ssK0zszJfyoMJSGY0pCkxn9uNu+MWQTCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCheckInItemAdapter.png" size="1864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E0qUUoQ7U8hF8uLrnLggu75R7Bwd1vSn7bJL84q8cSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCheckInItemWithKeyAdapter.png" size="1864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E0qUUoQ7U8hF8uLrnLggu75R7Bwd1vSn7bJL84q8cSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCollectDataAdapter.png" size="2252">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SvV9ZznSJiWTKfqRfbRy4vOUwNXxaSP1P2XhzQhPwSQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCollectionAdapter.png" size="1950">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IIeUs/1AvwOu/KS6cj3ASrdwbegWUnh0pSNU2sSoxHg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCommitAdapter.png" size="2203">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PdaT65wOfbixhuXGYVaEkEdhJWANPRWNAYkxBPG6uQs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCompileAudienceAdapter.png" size="1598">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Np5FZ3KJ5kBrOl0/tyZvTanU//+G9Y4U133B6vCDVbQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCompleteNWTaskAdapter.png" size="2285">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Hwr9K1OEhFLPtD1toFf/9VKK1B1ec12/iDLwYowJZzw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWConvertDocumentAdapter.png" size="2364">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KeJAFrdSmKJkCF9Xwa9wblFuaaloycq6R/Vn8D8+0Pc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCopyToFolderAdapter.png" size="1977">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ykKMpx5KZJ82guxHTlcq9FwGyczF/3oFoIzGgLi3vxw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCopyToSharepointSite2Adapter.png" size="1948">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v7M1p1rLnNKFau3kxlc3BVviVcwCrsYa9fjf4NxSQ7c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateADAccountAdapter.png" size="2189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>H7ztMjgMGECfTudpdm+mLmzlcotp8sowZXavywk88Mw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateADSecurityGroupAdapter.png" size="2364">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vcl0YlAlTjZIOClqOVS3nvn/LgqTA1c7IFFpEhuHk08=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateAudienceAdapter.png" size="1883">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Fxg0QKu7/nztktAI+4jSuiNNVBK+b0M05D+QNneieaQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateCRMEntityRecordAdapter.png" size="2131">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JeHdc1AkF8TOkef8AFP4GCVjb45P6QuPQZ0n5CEWPGU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateItemWithContentTypesAdapter.png" size="1773">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xqHJnVz7h7jEqH1K7xLXEuUJw8xv5baAoicRHogzd70=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateListAdapter.png" size="1740">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bEStxFKp5RqBKyK49xo8JuUWQuT73qIC9V8/kx5Fx78=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateSiteCollectionAdapter.png" size="2058">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NrdM1vlWXVddOCZuTYxHXp/QyFj21C6SX6de5aWN0UU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateSiteSpecificItemAdapter.png" size="2040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MStnv7BoKNQ8MJfJy0PwVz3AwYOW4fnbytm3cbM8bLo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateWebAdapter.png" size="2311">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gnRGSnVbkdwcH7o3edUm/Wzw7jOjkieICu2/SWbTlcY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDecommissionUserAdapter.png" size="2254">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fIB9oTKYILp9DHPTwVocNHllHcupqnWHr8jn5KwgE2c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDelayForAdapter.png" size="2309">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vKbTEhR4ozDWMZQnkxiDXmZk8Ukz20+0S6ynzFikjU8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDelegateNWTaskAdapter.png" size="2247">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0zc/FqD09kRMwJroPkDWgWDCBtsZETO94qUnwwgXFw0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteADSecurityGroupAdapter.png" size="2419">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jTwllIbiIwHj9DYJ3v+cZZw+PbdyQo5CYTRHPj9SMH0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteAudienceAdapter.png" size="2133">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bXwHqorgT3p+lbbnoYWZiYCgwwIrTcYldsXmJKwrjwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteCRMEntitiesAdapter.png" size="2121">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Yev8b8zUSLG6d820GinECRnOywg1oerN5m9U9OWBaDo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteMultipleItemAdapter.png" size="2056">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nKCjBjStA4PHJjqGYdNEa6JJuRiz8CJaxcqt3pETKzg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteSiteCollectionAdapter.png" size="2145">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xxsMa8Y1pDW7PLcUEMXTrthgM5rxVT1mSbhfC+RPcX0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteWebAdapter.png" size="2370">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fd796Jj2hAYWLEuiC2Cw1ZRffbWQ7eq5ITCgc0qhJCA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWEnableLCSOnADAccountAdapter.png" size="2626">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AiKucoxKNz9MG4SsGidXI5YWWT9W3YuyJZUo0EQumoo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWExchangeCreateAppointmentAdapter.png" size="2335">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fNybvP1JYHq5s2K+1pcX2wteXAtul3VG9b1Av8dgReo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWExchangeCreateTaskAdapter.png" size="2442">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C1RhFVWjPySJjTE98Ve+uDABBSvlbHJm3hsYjFwozYw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWFilterAdapter.png" size="1204">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0qdSxw8uaM8H61jMswmUIkTA3Mi/7KOOtImEA2ukYkQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWForEachLoopAdapter.png" size="2121">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9CestxfX9hgDdqz/KhAWOROD+UlTZpzlYdYF+ywEwfg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWGetMeetingSuggestionsAdapter.png" size="2447">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wtSYuiEIG0f1x7JCakefryotN0rzV0Ob5xpgTBrbeIA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWGetUsersByStatusAdapter.png" size="2495">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tKQ1nr8PbMekUFesgV5PuofRc1WrJE+blcL+vrpk8SE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWGetUserStatusAdapter.png" size="2105">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sG791/Um9H47iCGsJlkW51BfG50TD7xOL/SKn1xMqBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWIterateAdapter.png" size="2121">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9CestxfX9hgDdqz/KhAWOROD+UlTZpzlYdYF+ywEwfg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWLoopAdapter.png" size="2022">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KLBPJ9jEEL3RTMjaxs+ZCbVul6DGkeV9I3jJFEx2jKM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWMOSSSearchQueryAdapter.png" size="2450">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XxpTxU0ObaqXri216T6MedvjZVso+D2z97D9OIo6lM4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWMultiOutcomeAdapter.png" size="2404">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Bm2u25CkAj8hD9e0LP1TSAQO6kvZI4tjMR1HCpbRmr8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWParseValueAdapter.png" size="2222">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h18y2eZumdxKfnfsVIaFgzBD2x0pUlgG9+XK0KQ+vig=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWProvisionExchangeUserEmailAdapter.png" size="2290">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SJ6NKYXuXixVRUoHbE2wCq9NRA5Yem0cgIpiGqGrWFY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWPublishPendingWorkflowAdapter.png" size="2001">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8Tqy+35gw1SANrA8/H0ZzLi8EiHEsdP2j+4TPV1O8Oc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryCRMEntitiesAdapter.png" size="2051">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kKw+uRK4KL0RZJdncp3l3hmmJoYZsd7FqTBrVN1OrR8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryExcelWebServiceAdapter.png" size="2300">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tKJloUW9LASX2cuJYaNBqc33Q+sgQIgfR1cGwAHhZFI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryLdapAdapter.png" size="2276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6d5cqB1r5Tg+rUvVa1mUw5SMm7Nk361FP5Cni6yJhbM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryListAdapter.png" size="2149">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3mkB70lltFywn7H+ugXK+X5cxsvJ675JgIP1KFIyBV4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryUserProfileStoreAdapter.png" size="2270">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>81wy9JeF8lQ55/2SmajDOmiozyF3pgm63Y82pHBvvnA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWReadDocumentAdapter.png" size="2378">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZBpSzgBG2MHGOm1WZer/+M6lIRLYvB7pcFFySrwE5Fg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWReadXmlAdapter.png" size="2304">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>npZpeqbqylyi47tPnOyxwfdQ1NZsyKJxwRVfQgl5bwg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWRegularExpressionAdapter.png" size="1892">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/6CJwAfiItTpTffZhQVIDcQOU9QMcjtIpma3ggPqwEY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWRemoveUserFromADGroupAdapter.png" size="2387">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q+R7i98TMZgd9OBna1VCJIrkFxbI726mTuroTB7blxg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWRetrieveDataAdapter.png" size="2087">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QJRrsjMXVdLp8KMNmBg34QuuaDEmrTqeMOFdHwOXhb4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWReviewAdapter.png" size="2198">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T1v3Cl4k+CYrznupXqWafgtwgLvOaLK08RuDKQ1XIrQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWRunIf2Adapter.png" size="2255">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5pNAowdNwdqZDWUzlNifdZ2o1YI2Tbqg8yOwqEIXezM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWRunIfAdapter.png" size="2255">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5pNAowdNwdqZDWUzlNifdZ2o1YI2Tbqg8yOwqEIXezM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWRunSqlAdapter.png" size="2301">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8LE6wtunnLpVB7CS9S73YM6znWueN44mTgjUF/dHeMM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWSendMessageAdapter.png" size="1571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nhLtAzoP/uFd5f1wExQQPKCFaBx74mtVJMu5XUismXA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWSendReceiveMessageAdapter.png" size="2322">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kaC4oCcXh6QR3FzNwQe+0I1BK8TgX3DKQxI7gYGNq4Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWSetItemPermissions.png" size="2140">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5cyB9acpPA3s0qZoRwjcb8aY1hHBedFPt0uniz1Scow=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWSetModerationStatusAdapter.png" size="2007">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Zji4Ei8AW4MY39iIV5YD/JkKIYINpNHCUsO1OWRZZW4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWStartWorkflow2Adapter.png" size="2092">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lZmrEvlgru5NRBWRRs1pprnVkrMYpLiFPV3b9ygZ7yQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWStartWorkflowAdapter.png" size="2092">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lZmrEvlgru5NRBWRRs1pprnVkrMYpLiFPV3b9ygZ7yQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWStateChangeAdapter.png" size="1874">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8FY5sa3E7+43typS5n5xCQnKXziscz4OWe270WKoXqs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWStateMachine2Adapter.png" size="2044">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VQTrwqXag05LUDpYPMdH8a0sxwroba6G4VZDhK03AMA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWStateMachineAdapter.png" size="2044">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VQTrwqXag05LUDpYPMdH8a0sxwroba6G4VZDhK03AMA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWStoreDataAdapter.png" size="2073">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kPFCFH9ZVw4aj+fIGQ9UkDvb4PcyoSgNkHxOoSUL2f0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWSubmitRecordAdapter.png" size="2097">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xWY2T2lMtbuI4OUp6jm2z5hgDMSfsPKyQPngCLC6J0A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWSwitchAdapter.png" size="570">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ywt+iPxtYndFijEDmXMpYNuKnl7Xz6u9KV3vk1GQb4c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWSwitchBranchAdapter.png" size="119">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YDUGmWuQK4eXy8HcS/NQRAyq1cWf65fDk0T9dkhAO10=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWTaskReminderAdapter.png" size="2532">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>auTqJN+W8poplUX4ydBTUtPV8YTYLiM1UWUtdTT71nA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateADAccountAdapter.png" size="2285">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>34dhzdy1UgVl8vFxR/2ocrnlCh646d5ktZVbCneOZSs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateCRMRecordAdapter.png" size="2080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>71dJIK5kyOVIWIZ89jauUCA/WIIEWN2KsTpQOhZrF+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateDocumentAdapter.png" size="2355">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zKBRvRAh3KcF7s9J+EHAHWQM7Sw9/uYOm1fwgSEUC5A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateMultipleItemAdapter.png" size="1958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sJGk12gZ0xyVHJVsQxkBcweYjXPsXGxXggfPJBvV2jc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateUserProfileAdapter.png" size="2225">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vVTE1ZxmZmQB2MIyN860DQNbCs2Vw+YKH+rIMF56Wzs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateXmlAdapter.png" size="2285">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Sa+Sm2a0DRao7pii5Ok39D6xSEnCs9KEQjk0mVMLWRI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWWebRequestAdapter.png" size="2366">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yJYfg85ndaZx7icoG39NqzqbMMYFq51KAEzf3XbETUk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWWorkflowVariablesAdapter.png" size="1121">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cOoNpCxj3SjE0XWuS0nS3n4zwt8S4Axc28lPtBq9YdA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.NWWriteToHistoryListAdapter.png" size="2207">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q9c+gCWpXv/fJ4oCfPUxQkff4wpAvgvC1OL67lNRRqo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPCaptureVersionOfDocumentSetAdapter.png" size="2359">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kmJ0YGNmf+zpHvqqLIL7MCIUcQaT9cMDsZ74SG7Sl/c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPCheckInItemWithKeyAdapter.png" size="1864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E0qUUoQ7U8hF8uLrnLggu75R7Bwd1vSn7bJL84q8cSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPCheckOutItemAdapter.png" size="1878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NvgdNVsjNLYW4sM6g99lc6jHTCRRfVAUgDWHBBwFyKE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPCheckOutItemWithKeyAdapter.png" size="1878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NvgdNVsjNLYW4sM6g99lc6jHTCRRfVAUgDWHBBwFyKE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPCopyItemAdapter.png" size="1429">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QQHHdR7Z+v+Bv7Cm/Wq42WFKIYlsSaajn857SIIzYCI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPDeclareRecordAdaptor.png" size="2093">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bACMTQmfpiCRvOqD+Hdl2I/hmhTC+HnhxWczel+zYco=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPDelayForAdapter.png" size="2309">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vKbTEhR4ozDWMZQnkxiDXmZk8Ukz20+0S6ynzFikjU8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPDelayUntilAdapter.png" size="2059">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q+alh2PzVEkf1RVc+yYosIUmd/hr904D+9p3ehiXhWE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPDeleteDraftsAdapter.png" size="2545">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LIR5eSC+Tg59ZxF5kMMNd22oOnNjWBEQDp7zwwlQ5Ek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPDeleteItemAdapter.png" size="2077">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HYg59GDHattGvBhkmC1FdZMUSmc+/iBowJuuqwwowxI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPDeleteItemWithKeyAdapter.png" size="2077">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HYg59GDHattGvBhkmC1FdZMUSmc+/iBowJuuqwwowxI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPDeletePreviousVersionsAdapter.png" size="2555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kDB9LHuNy3rxfrGk3Fy3/UUDG9TgvdxoSHLPpORFhb0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPMathAdapter.png" size="2259">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JiLzn86tIfbZaoT8lOTCBjOUtDy0Jx1MIRQWGcBLd8k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPSendDocumentSetToRepositoryAdapter.png" size="2187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0MeVABD5WgKPryWf0RarhB54/lCleOx2snDpsuLyYDU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPSendDocumentToRepositoryAdapter.png" size="2052">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qxO6pVSBbHNE0v+aBici2WyBTuG6qGoz+sWrjEcuYJU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPSetContentApprovalStatusForDocumentSetAdapter.png" size="2284">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2a+fbXcFU4qj1ZitGNwe2pjifWUybdawxqouKfpaLDk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPSetCustomWorkflowStatusAdapter.png" size="2054">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qx6ncBkDE6hBI2CjYmVUKlh0+NsQPZPiTsUhVaqnJUY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPSetFieldAdapter.png" size="1195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>64a31WgfU9ORADyo+A0XJJggleQ6VeIdiZLM2c8WBsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPSetFieldWithKeyAdapter.png" size="1195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>64a31WgfU9ORADyo+A0XJJggleQ6VeIdiZLM2c8WBsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPSetVariableAdapter.png" size="1724">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ciPeLriwSV1LHEdxjxOWMrQmWovEmQHnxBk/kgiuLBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPUndeclareRecordAdapter.png" size="2043">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PqxalETrF0zwUFrkZVoZ/20UU3gfdK8O5EDXkptXVTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPUndoCheckOutItemAdapter.png" size="2217">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rnjBsd7dODs0mat3/ylN8XpOeuvzNbi072Y4btA0rYo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPUpdateItemAdapter.png" size="1958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P2STaxHF9dbGFhEJjY8CdXc/iuWfR1QgT1zQGRRBQBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPUpdateItemWithKeyAdapter.png" size="1958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P2STaxHF9dbGFhEJjY8CdXc/iuWfR1QgT1zQGRRBQBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPWaitForAdapter.png" size="2264">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6rsBBah+Sm/RW4+Z7mbKGWMFU2GONFW1JX1vBuyj9NE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPWaitForDocumentStatusAdapter.png" size="2379">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>B4yT32hQmDVqrWm47WRqKwpWKsblX8+JPOQSqHaqtY8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.SPWaitForWithKeyAdapter.png" size="2264">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6rsBBah+Sm/RW4+Z7mbKGWMFU2GONFW1JX1vBuyj9NE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.WFIfElseAdapter.png" size="1961">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1y0k8o9USVnYZ5sA96AmlMnYzkQo/hBd7NAvg0OaPWA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.WFIfElseBranchAdapter.png" size="734">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>N1S/QRikTS6UMtDzx8bGnFVSFK6Qfx/u1pCd9bWcgS4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.WFParallelAdapter.png" size="827">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w54td8tSpnlvkHR51oZo374zVl1aAb33ngozFa4YY+U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.WFSequenceAdapter.png" size="119">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YDUGmWuQK4eXy8HcS/NQRAyq1cWf65fDk0T9dkhAO10=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.WFTerminateAdapter.png" size="1944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>euejQ7k6qYqYQ6vQB7K0NyTV0oZGA4EchKys7NRO5p0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.Activities.Adapters.WFWhileAdapter.png" size="2022">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KLBPJ9jEEL3RTMjaxs+ZCbVul6DGkeV9I3jJFEx2jKM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSChangeEPTAdapter.png" size="3884">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EwmwL5pIAkoZLnroNyj+nItpMqBMGtWZMH+gjRta12M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSCompareProjectPropertyAdapter.png" size="1416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GX2CAf7iyisZb1KxDmBc0GafZkExt3qRdzKNzxldoZM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSEventContextAdapter.png" size="3571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yHiRkc7rum949E4p3TAlc4oarDTQeysPhLXx+yY2Ssw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSOnProjectCheckinAdapter.png" size="4015">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6y5vf9KS6wRb1cV33wC/L6rJTLqSot5ByEhM136/o1g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSOnProjectCommitAdapter.png" size="4005">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZpHBvdFjnIJ1crO4jonWh/SFjXcewXH7LFD+GrRRVNw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSOnProjectSubmitAdapter.png" size="4004">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JKLJpnjpXWIqthTeQamnteJEGu9J310x+BYhdzzezNA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSQueryPSIAdapter.png" size="3969">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>urOx3vtAtOR+1GoxLj1osunfFBPCEYVDF/mDcIca0Is=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSQueueProjectPublishAdapter.png" size="3566">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uMUHy08gSV1d4H77aAslWJBl1+6QA9t1IVwxr93WWpU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSReadProjectPropertyAdapter.png" size="1758">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UTvX9ssga8QzgRf1rM7mLMXZE1KuS/wKEMQpu5YgwR4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSReadProjectSecurityGroupMembersAdapter.png" size="2102">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Jw6YCw19gzvPA58ClqKft79MSJzfQd3/x6oAAt41LQ8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSSetProjectStageAdapter.png" size="1559">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FSrhFWj1soW+mkysNs61kxkkmMaRJKqKP+giXI0o2jw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSUpdateProjectFieldForProjectAdapter.png" size="3647">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AfeLdsoq0Wr6/03HksThKFmJfe0SjFtDWmNmB3etmdM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSUpdateProjectPropertyAdapter.png" size="3073">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yEMZ+5p13nYrMKPIDLXyIrh3zZaybsfknzV6HDFIN9E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSUpdateProjectStageStatusAdapter.png" size="1502">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1E18YqBUz1NUUg7S4cabKMmeHrBYuLZ7jpRiQwSwLYs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\Nintex.Workflow.UserDefinedActions.UserDefinedActionWrapperAdapter.png" size="2259">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8+I5vE9Ywy2uSEs8msiI5iTE7do4yjkgFYLC0wLN4ko=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\RemoveFromMemberGroup.png" size="2115">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>13M75y79qiKB972JJLHPsEmTrVoPZafdMOkJHQO8ATE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\RequestApproval-rtl.png" size="2111">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XxeL4NcWw5o8TSe9eoPzFGqajcOdldkLM6YOC9lG5m4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\requestdata.png" size="2252">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SvV9ZznSJiWTKfqRfbRy4vOUwNXxaSP1P2XhzQhPwSQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\SetProjectStage.png" size="2072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z66uHldCftEkvJYBCmWbL8Lgt4xRYFvOls9gVvAPfwY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\UndoCheckout.gif" size="2686">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7LdxSrix8fJTHCaJK6qjTp8+hMlFuwQEsPh4RZq57Vk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\UpdateItem.gif" size="2214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GfyfNjRsW2KeJbgr2q06Rj3vMxZHstQOk13sKF7v/aU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\UserDefinedActionUnavailable.png" size="2259">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8+I5vE9Ywy2uSEs8msiI5iTE7do4yjkgFYLC0wLN4ko=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\WaitForDocumentStatus.png" size="2258">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nqHZf0qhzgUr3H5+kLxWEmfwIMts93rMayk8t1CKpc8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\WaitForUpdate.gif" size="1966">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RHxEo3HbgDAPcJuMZaIxfoedksx50a3iGdX8UKcbom0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="wfimages\WorkflowVariables.png" size="2378">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gJB+rx49/RlsuvtU+oDoHoVt8aeatEMuCG1rSTs6UuI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="WorkflowAnalyzer.exe.config" size="2842">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>680z2XB6I7EJUIdhg6jeuQHzQtH1KSn5ncpKzLKqB74=</dsig:DigestValue>
+    </hash>
+  </file>
+  <fileAssociation extension=".log" description="SharePoint ULS Log" progid="WorkflowAnalyzer" defaultIcon="5.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <fileAssociation extension=".nwf" description="Nintex Workflow Export" progid="WorkflowAnalyzer" defaultIcon="5.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <fileAssociation extension=".zip" description="Nintex Support Package" progid="WorkflowAnalyzer" defaultIcon="5.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+</asmv1:assembly>

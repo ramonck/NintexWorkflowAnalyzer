@@ -3,6 +3,7 @@ D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnal
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WPF.Controls\bin\Debug\PluginManager.dll
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WPF.Controls\bin\Debug\PluginManager.pdb
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WPF.Controls\bin\Debug\PluginManager.xml
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WPF.Controls\obj\Debug\WorkflowAnalyzer.WPF.Controls.csprojResolveAssemblyReference.cache
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WPF.Controls\obj\Debug\WFAction.baml
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WPF.Controls\obj\Debug\WFAction.g.cs
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WPF.Controls\obj\Debug\WorkflowAnalyzer.WPF.Controls_MarkupCompile.cache

@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WorkflowAnalyzer</name>
+    </assembly>
+    <members>
+        <member name="F:WorkflowAnalyzer.Controls.ActionIcon.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Controls.ActionIcon.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Controls.ActionIcon.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WorkflowAnalyzer.Controls.ActionIconWpf">
+            <summary>
+            Interaction logic for ActionIconWpf.xaml
+            </summary>
+            <summary>
+            ActionIconWpf
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Controls.ActionIconWpf.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:WorkflowAnalyzer.Controls.Parameter.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Controls.Parameter.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Controls.Parameter.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.FileHandler.OpenFileDialog">
+            <summary>
+            Launches Open File Dialog Modal Window.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.FileHandler.NwfFileLoader(System.String)">
+            <summary>
+            Loads NWF File into Analyzer from provided path.
+            </summary>
+            <param name="fileName">Path to file including filename.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.FileHandler.NWFXMLLoader(System.String)">
+            <summary>
+            Loads NWF File into Analyzer from XML
+            </summary>
+            <param name="fileName">Workflow XML.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.FileHandler.SupportPackageLoader(System.String)">
+            <summary>
+            Loads Support Package File into Analyzer from provided path.
+            </summary>
+            <param name="fileName">Path to file including filename.</param>
+        </member>
+        <member name="F:WorkflowAnalyzer.Forms.ActionConfigurationForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.ActionConfigurationForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.ActionConfigurationForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:WorkflowAnalyzer.Forms.FormControlConfiguration.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.FormControlConfiguration.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.FormControlConfiguration.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:WorkflowAnalyzer.Forms.ParameterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.ParameterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.ParameterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:WorkflowAnalyzer.Forms.testingwpf.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.testingwpf.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.testingwpf.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.WfaMain.#ctor(System.String[])">
+            <summary>
+            OneClick Installation
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="F:WorkflowAnalyzer.Forms.WfaMain.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.WfaMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.WfaMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:WorkflowAnalyzer.Forms.RegExForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.RegExForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WorkflowAnalyzer.Forms.RegExForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.AssociatedListName">
+            <summary>
+            List Associated with Workflow.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.WorkflowType">
+            <summary>
+            Workflow Type Site/List
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.ActionCount">
+            <summary>
+            Count of all activities in the workflow less sequence adapters.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.RealActionCount">
+            <summary>
+            Count of all activities in the workflow.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.UsesEventReceiver">
+            <summary>
+            Does the workflow start when an item is created or modified?
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.StartsOnCreateEvent">
+            <summary>
+            Does the workflow start when a new item is created?
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.StartsOnModifiedEvent">
+            <summary>
+            Does the workflow start when an item is modified?
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.VersionOfNintexWorkflow">
+            <summary>
+            Version of Nintex Workflow the export is from.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.NWFContext.NWVersionIsCurrent">
+            <summary>
+            Checks if version is current.
+            </summary>
+            <returns>boolean value.</returns>
+        </member>
+        <member name="T:WorkflowAnalyzer.NamespaceDoc">
+            <summary>
+            Contains interoperability classes for use with plug-ins.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFHandler.NwfXmlDocument">
+            <summary>
+            NWF External and Internal XML
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFHandler.NwfXmlInternalDocument">
+            <summary>
+            NWF Internal XML
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFHandler.NwfXmlModifiedByEditor">
+            <summary>
+            NWF XML Modified by Editor
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFHandler.NwfFileSize">
+            <summary>
+            Nwf File Size in Kilobytes.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFWrapper.AssociatedListName">
+            <summary>
+            List Associated with Workflow.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFWrapper.WorkflowType">
+            <summary>
+            Workflow Type Site/List
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFWrapper.ActionCount">
+            <summary>
+            Count of all activities in the workflow
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFWrapper.StartsOnCreateEvent">
+            <summary>
+            Does the workflow start when a new item is created?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFWrapper.StartsOnModifiedEvent">
+            <summary>
+            Does the workflow start when an item is modified?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFWrapper.UsesEventReceiver">
+            <summary>
+            Does the workflow start when an item is created or modified?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.NWFWrapper.VersionOfNintexWorkflow">
+            <summary>
+            Version of Nintex Workflow the export is from.
+            </summary>
+        </member>
+        <member name="T:WorkflowAnalyzer.PluginHelper">
+            <summary>
+            Provides one way communication from Nintex Workflow Analyzer to plug-ins.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.NwfXmlDocument">
+            <summary>
+            Returns loaded NWF document as XML.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.NwfXmlInternalDocument">
+            <summary>
+            Returns internal XML from the loaded NWF document.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.NwfXmlExternalDocument">
+            <summary>
+            Returns external XML from the loaded NWF document.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.NwfXmlModifiedByEditor">
+            <summary>
+            Returns loaded NWF (from editor) document as XML.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.AssociatedListName">
+            <summary>
+            List Associated with Workflow.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.WorkflowType">
+            <summary>
+            Workflow Type Site/List
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.ActionCount">
+            <summary>
+            Count of all activities in the workflow less sequence adapters.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.RealActionCount">
+            <summary>
+            Count of all activities in the workflow.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.StartsOnCreateEvent">
+            <summary>
+            Does the workflow start when a new item is created?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.StartsOnModifiedEvent">
+            <summary>
+            Does the workflow start when an item is modified?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.UsesEventReceiver">
+            <summary>
+            Does the workflow start when an item is created or modified?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.VersionOfNintexWorkflow">
+            <summary>
+            Version of Nintex Workflow the export is from.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.HandlesBatching">
+            <summary>
+            Does the workflow correctly handle batched actions?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.HandlesTiming">
+            <summary>
+            Does the workflow handle instantiation timing correctly?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.HasRecursiveConfiguration">
+            <summary>
+            Is the workflow recursive?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.HasLogNestedInLoop">
+            <summary>
+            Does the workflow have Log To History List actions nested in Looping actions?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.IsLoggingProgressDataInLoop">
+            <summary>
+            Does the workflow log progress data inside of a loop?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.CallWebServiceUsesTokenEncoding">
+            <summary>
+            Call Web Service actions use token encoding when not in builder mode?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.UsingStoredCredentials">
+            <summary>
+            Do all actions that require credentials store them securely?
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.WorkflowSize">
+            <summary>
+            Workflow filesize in Kb.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.ApplicationRootPath">
+            <summary>
+            Application installation directory.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.PluginPath">
+            <summary>
+            Application plugin directory.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.WebAssetsPath">
+            <summary>
+            Application WebAssets directory.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.JQueryLibrary">
+            <summary>
+            Returns JQuery Assets with resolved paths in HTML.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.FarmSummaryXmlDocument">
+            <summary>
+            Farm summary loaded from Support Package File as XML.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.NintexProductsXmlDocument">
+            <summary>
+            Nintex product information loaded from Support Package File as XML;
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.FarmSummaryContext">
+            <summary>
+            Farm summary loaded from Support Package File.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.NintexProductDataContext">
+            <summary>
+            Nintex product information loaded from Support Package File.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.ULSLogs">
+            <summary>
+            ULS log loaded from Support Package File.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.PluginHelper.UlsLogEntries">
+            <summary>
+            ULS Log loaded from Support Package File.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+            
+        </member>
+        <member name="T:WorkflowAnalyzer.ValidationHelper">
+            <summary>
+            Used to validate various conditions in plug-ins.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.ValidationHelper.BatchedActions">
+            <summary>
+            Batched action definitions based on adapter assembly names.
+            </summary>
+        </member>
+        <member name="M:WorkflowAnalyzer.ValidationHelper.LoadBatchedActionHashSet">
+            <summary>
+            Load batched action definitions into HashSet.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WorkflowAnalyzer.ValidationHelper.IsBatchedAction(System.String)">
+            <summary>
+            Check if Activity is considered batched.
+            </summary>
+            <param name="activityName">Specify Activity by its full name.</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="T:WorkflowAnalyzer.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.BPA_Assets">
+             <summary>
+               Looks up a localized string similar to &lt;script src=&quot;{Assets}js/jquery-1.10.2.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/jquery-ui-1.10.4.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/jquery-ui-1.10.4.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/BPA_JS.js&quot;&gt;&lt;/script&gt;
+            &lt;link href=&quot;{Assets}css/ui-lightness/jquery-ui-1.10.4.css&quot; rel=&quot;stylesheet&quot; /&gt;
+            &lt;link href=&quot;{Assets}css/ui-lightness/jquery-ui-1.10.4.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+            &lt;link href=&quot;{Assets}css/BPA_CSS.css&quot; rel=&quot;stylesheet&quot; /&gt;.
+             </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.Forms_Assets">
+             <summary>
+               Looks up a localized string similar to &lt;script src=&quot;{Assets}js/jquery-1.10.2.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/jquery-ui-1.10.4.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/jquery-ui-1.10.4.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/Forms.js&quot;&gt;&lt;/script&gt;
+            &lt;link href=&quot;{Assets}css/ui-lightness\jquery-ui-1.10.4.css&quot; rel=&quot;stylesheet&quot; /&gt;
+            &lt;link href=&quot;{Assets}css/ui-lightness\jquery-ui-1.10.4.min.css&quot; rel=&quot;stylesheet&quot; /&gt;.
+             </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.JQuery">
+             <summary>
+               Looks up a localized string similar to &lt;script src=&quot;{Assets}js/jquery-1.10.2.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/jquery-ui-1.10.4.js&quot;&gt;&lt;/script&gt;
+            &lt;script src=&quot;{Assets}js/jquery-ui-1.10.4.min.js&quot;&gt;&lt;/script&gt;
+            &lt;link href=&quot;{Assets}css/ui-lightness/jquery-ui-1.10.4.css&quot; rel=&quot;stylesheet&quot; /&gt;
+            &lt;link href=&quot;{Assets}css/ui-lightness/jquery-ui-1.10.4.min.css&quot; rel=&quot;stylesheet&quot; /&gt;.
+             </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_aboutToolStripMenuItem_Click_Nintex_Workflow_Analyzer">
+            <summary>
+              Looks up a localized string similar to Nintex Workflow Analyzer.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_aboutToolStripMenuItem_Click_Version__">
+            <summary>
+              Looks up a localized string similar to Version: .
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadMainBrowserWithContent_Nintex_Workflow_Analyzer___">
+            <summary>
+              Looks up a localized string similar to Nintex Workflow Analyzer - .
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadWfbpaWithContent_Possible_Issues">
+            <summary>
+              Looks up a localized string similar to Possible Issues.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadWfConfigurationWithContent_Workflow_Configuration">
+            <summary>
+              Looks up a localized string similar to Workflow Configuration.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadWfExternalConfigurationWithContent_External_Configuration">
+            <summary>
+              Looks up a localized string similar to External Configuration.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadWfGraphicalWithContent_Graphical_View">
+            <summary>
+              Looks up a localized string similar to Graphical View.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadWfVariablesWithContent_Workflow_Variables">
+            <summary>
+              Looks up a localized string similar to Workflow Variables.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_External_XML">
+            <summary>
+              Looks up a localized string similar to External XML.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Failed_to_render_preview__">
+            <summary>
+              Looks up a localized string similar to Failed to render preview: .
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Internal_XML">
+            <summary>
+              Looks up a localized string similar to Internal XML.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Preview">
+            <summary>
+              Looks up a localized string similar to Preview.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Preview_Changes">
+            <summary>
+              Looks up a localized string similar to Preview Changes.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Preview_Changes_made_to_XML">
+            <summary>
+              Looks up a localized string similar to Preview Changes made to XML.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Reset">
+            <summary>
+              Looks up a localized string similar to Reset.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Reset_XML_to_default">
+            <summary>
+              Looks up a localized string similar to Reset XML to default.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Save">
+            <summary>
+              Looks up a localized string similar to Save.
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_Save_changes_to_new_NWF_file_">
+            <summary>
+              Looks up a localized string similar to Save changes to new NWF file..
+            </summary>
+        </member>
+        <member name="P:WorkflowAnalyzer.Properties.Resources.WfaMain_LoadXmlEditorWithContent_XML_Editor">
+            <summary>
+              Looks up a localized string similar to XML Editor.
+            </summary>
+        </member>
+    </members>
+</doc>

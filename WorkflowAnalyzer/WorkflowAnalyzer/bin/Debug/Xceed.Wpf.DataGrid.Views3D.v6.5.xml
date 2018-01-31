@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Xceed.Wpf.DataGrid.Views3D.v6.5</name>
+  </assembly>
+  <members>
+    <member name="T:Xceed.Wpf.DataGrid.Views.CardflowView3DSurfaces">
+      <summary>Value that represents the various surfaces that are supported by the Cardflow 3D view.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3DSurfaces.Left">
+      <summary>The surface displayed on all cards located to the left of the center card.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3DSurfaces.Center">
+      <summary>The surface displayed on the front of the center card.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3DSurfaces.Right">
+      <summary>The surface displayed on all cards located to the right of the center card.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3DSurfaces.Back">
+      <summary>The surface displayed on the back of the center card.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3DSurfaces.All">
+      <summary>All surfaces.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionOrientation">
+      <summary>Value representing the various title-region orientations supported by the Chameleon theme.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionOrientation.Upward">
+      <summary>The title-region is upward.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionOrientation.Downward">
+      <summary>The title-region is downward.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionPosition">
+      <summary>Value representing the various title-region positions supported by the Chameleon theme (see Remarks).</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionPosition.Left">
+      <summary>The title-region is positioned at the left of the surface.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionPosition.Right">
+      <summary>The title-region is positioned at the right of the surface.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.ElementalTitleRegionPosition">
+      <summary>Value representing the various title-region positions supported by the Elemental themes (see Remarks).</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ElementalTitleRegionPosition.Top">
+      <summary>The title-region is positioned at the top of the surface.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ElementalTitleRegionPosition.Middle">
+      <summary>The title-region is positioned in the middle of the surface.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ElementalTitleRegionPosition.Bottom">
+      <summary>The title-region is positioned at the bottom of the surface.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.CardflowItemsHost">
+      <summary>
+        <para>Class used in DataGridControl templates as a replacement for the
+<strong>ItemsPresenter</strong> when a grid is in a cardflow-view layout and that will contain the data items as well as the items contained in
+<strong>non-fixed</strong> header and footer sections and whose containers are created from the associated <see cref="Xceed.Wpf.DataGrid.v6.5~Xceed.Wpf.DataGrid.DataGridItemsHost~CustomItemContainerGenerator.html">CustomItemContainerGenerator</see>.</para>
+      </summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.CardflowView3D">
+      <summary>The Cardflow™ 3D view, which is represented by the CardflowView3D
+class, provides a 3-dimensional card-view layout for the data items in a grid and allows various card "surfaces" to display data using customized,
+theme-defined surface configurations.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.ChameleonTheme">
+      <summary>Represents the Chameleon theme, which is a two-tone theme that provides full control over its gradient color scheme.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.ElementalBlackTheme">
+      <summary>Represents the Elemental Black theme, which is a basic black theme that was designed to blend perfectly with the black Office
+2007 theme.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.ElementalBlueTheme">
+      <summary>Represents the Elemental Blue theme, which is a basic blue theme that was designed to blend perfectly with the blue Office
+2007 theme.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.Views.ElementalSilverTheme">
+      <summary>Represents the Elemental Silver theme, which is a basic silver theme that was designed to blend perfectly with the silver
+Office 2007 theme.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.ArrangeOverride(System.Windows.Size)">
+      <summary>Arranges the content of the items.</summary>
+      <param name="finalSize">
+        <para>The final area within the parent that this element should use to arrange itself and its children.</para>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CreateChildCollection">
+      <summary>Creates an empty list of <strong>UIElements</strong> that will contain the containers that are generated for data items and items contained in non-fixed header
+and footer sections.</summary>
+      <returns>An empty <strong>IList&lt;UIElement</strong>&gt; collection that will contain the containers that are generated for data items and items contained in the
+non-fixed header and footer sections.</returns>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.InvalidateScrollInfo">
+      <summary>Called by an <strong>IScrollInfo</strong> interface that is attached to a <strong>ScrollViewer</strong> when the value of any scrolling property size changes.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.MeasureOverride(System.Windows.Size)">
+      <summary>Measures the child elements in anticipation of arranging them during the ArrangeOverride pass</summary>
+      <returns>The <strong>Size</strong> that represents the desired size of the element.</returns>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.OnReceiveWeakEvent(System.Type,System.Object,System.EventArgs)">
+      <summary>Invoked whenever a WeakEventManager delivers the event being managed by the class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.ScrollByOffset(System.Int32)">
+      <summary>Scrolls by the specified offset.</summary>
+      <param name="offset">The offset, in card widths, by which to scroll. Can be negative to scroll to the left, and positive to scroll to the right.</param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.ScrollToIndex(System.Int32)">
+      <summary>Scrolls to the specified index.</summary>
+      <param name="index">The zero-based index to which to scroll.</param>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraXOffset">
+      <summary>Gets or sets the offset of the camera from the center of the viewport on the X axis.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraYOffset">
+      <summary>
+        <para>Gets or sets the offset of the camera from the center of the viewport on the Y axis.</para>
+      </summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraZOffset">
+      <summary>
+        <para>Gets or sets the offset of the camera from the center of the viewport on the Z axis.</para>
+      </summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsXAngle">
+      <summary>Gets or sets the X-axis angle of the cards located to either side of the center card.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsYAngle">
+      <summary>Gets or sets the Y-axis angle of the cards located to either side of the center card.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraLooksAtOriginOnXProperty">
+      <summary>Identifies the CameraLooksAtOriginOnX
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraLooksAtOriginOnYProperty">
+      <summary>Identifies the CameraLooksAtOriginOnY
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraRevolutionXAngleProperty">
+      <summary>Identifies the CameraRevolutionXAngle
+dependency property.Identifies the CameraRevolutionXAngle
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraRevolutionYAngleProperty">
+      <summary>Identifies the CameraRevolutionYAngle
+dependency property.Identifies the CameraRevolutionYAngle
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraXOffsetProperty">
+      <summary>Identifies the CameraXOffset dependency property.Identifies the CameraXOffset dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraYOffsetProperty">
+      <summary>Identifies the CameraYOffset dependency property.Identifies the CameraYOffset dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CameraZOffsetProperty">
+      <summary>Identifies the CameraZOffset dependency property.Identifies the CameraZOffset dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CardHeightToViewportRatioProperty">
+      <summary>Identifies the CardHeightToViewportRatio dependency property.Identifies the CardHeightToViewportRatio dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CenterCardXAngleProperty">
+      <summary>Identifies the CenterCardXAngle dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.CenterCardYAngleProperty">
+      <summary>Identifies the CenterCardYAngle dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.EmptySurfaceBrushProperty">
+      <summary>Identifies the EmptySurfaceBrush dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.FieldOfViewProperty">
+      <summary>Identifies the FieldOfView dependency property.Identifies the FieldOfView dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.IsCardFlippingEnabledProperty">
+      <summary>Identifies the IsCardFlippingEnabled
+dependency property.Identifies the IsCardFlippingEnabled
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.ShowReflectionsProperty">
+      <summary>Identifies the ShowReflections dependency
+property.Identifies the ShowReflections dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsCountProperty">
+      <summary>Identifies the SideCardsCount dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsXAngleProperty">
+      <summary>Identifies the SideCardsXAngle dependency
+property.Identifies the SideCardsXAngle dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsXOffsetProperty">
+      <summary>Identifies the SideCardsXOffset dependency
+property.Identifies the SideCardsXOffset dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsXSpacingProperty">
+      <summary>Identifies the SideCardsXSpacing dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsYAngleProperty">
+      <summary>Identifies the SideCardsYAngle dependency
+property.Identifies the SideCardsYAngle dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsZOffsetProperty">
+      <summary>Identifies the SideCardsZOffset dependency
+property.Identifies the SideCardsZOffset dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowItemsHost.SideCardsZSpacingProperty">
+      <summary>Identifies the SideCardsZSpacing dependency
+property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowView3D.GetSurfaces(System.Windows.DependencyObject)">
+      <summary>Gets a value representing the surfaces that are supported by the Cardflow 3D view.</summary>
+      <returns>A CardflowView3DSurfaces value representing the surfaces
+that are supported by the Cardflow 3D view.</returns>
+      <param name="obj">
+        <para>The dependency object from which the property value is read.</para>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.CardflowView3D.SetSurfaces(System.Windows.DependencyObject,Xceed.Wpf.DataGrid.Views.CardflowView3DSurfaces)">
+      <summary>Sets a value representing the surfaces that are supported by the Cardflow 3D view.</summary>
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">A CardflowView3DSurfaces value representing the surfaces
+that are supported by the <span class="dxMisspelled" id="dxMisspelled" word="Cardflow">Cardflow</span> 3D view.</param>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraLooksAtOriginOnX">
+      <summary>Gets or sets a value indicating whether the camera looks at the X origin when it moves along the X axis (see Remarks).</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraLooksAtOriginOnY">
+      <summary>Gets or sets a value indicating whether the camera looks at the Y origin when it moves along the Y axis (see Remarks).</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraRevolutionXAngle">
+      <summary>Gets or sets the angle of the camera as it revolves on the X-axis.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraRevolutionYAngle">
+      <summary>Gets or sets the angle of the camera as it revolves on the Y-axis.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraXOffset">
+      <summary>Gets or sets the X-axis offset of the camera from the middle of the center card.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraYOffset">
+      <summary>Gets or sets the Y-axis offset of the camera from the middle of the center card.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraZOffset">
+      <summary>Gets or sets the Z-axis offset of the camera from the middle of the center card.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CardHeightToViewportRatio">
+      <summary>Gets or sets the physical card size relative to the height of the viewport.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CenterCardXAngle">
+      <summary>Gets or sets the X-axis angle of the center card (see Remarks).</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.CenterCardYAngle">
+      <summary>Gets or sets the Y-axis angle of the center card (see Remarks).</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.EmptySurfaceBrush">
+      <summary>Gets or sets the brush that is applied to cards that currently do not display a surface.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.FieldOfView">
+      <summary>Gets or sets the camera's horizontal field of view.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.IsCardFlippingEnabled">
+      <summary>Gets or sets a value indicating whether the center card can be flipped to show its back surface.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.ShowReflections">
+      <summary>Gets or sets a value indicating whether card reflections are shown.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsCount">
+      <summary>Gets or sets the maximum number of cards on each side of the center card on which surfaces are displayed.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsXAngle">
+      <summary>Gets or sets the X-axis angle of the cards located to either side of the center card (see Remarks).</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsXOffset">
+      <summary>Gets or sets the X-axis offset of the cards located to either side of the center card, measured from the middle of the center card (see Remarks).</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsXSpacing">
+      <summary>Gets or sets the X-axis spacing between the cards located to either side of the center card.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsYAngle">
+      <summary>Gets or sets the Y-axis angle of the cards located to either side of the center card (see Remarks).</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsZOffset">
+      <summary>Gets or sets the Z-axis offset of the cards located to either side of the center card, measured from the middle of the center card.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsZSpacing">
+      <summary>Gets or sets the Z-axis spacing between the cards located to either side of the center card.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraLooksAtOriginOnXProperty">
+      <summary>Identifies the CameraLooksAtOriginOnX
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraLooksAtOriginOnYProperty">
+      <summary>Identifies the CameraLooksAtOriginOnY
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraRevolutionXAngleProperty">
+      <summary>Identifies the CameraRevolutionXAngle
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraRevolutionYAngleProperty">
+      <summary>Identifies the CameraRevolutionYAngle
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraXOffsetProperty">
+      <summary>Identifies the CameraXOffset dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraYOffsetProperty">
+      <summary>Identifies the CameraYOffset dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CameraZOffsetProperty">
+      <summary>Identifies the CameraZOffset dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CardHeightToViewportRatioProperty">
+      <summary>Identifies the CardHeightToViewportRatio
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CenterCardXAngleProperty">
+      <summary>Identifies the CenterCardXAngle dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.CenterCardYAngleProperty">
+      <summary>Identifies the CenterCardYAngle dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.EmptySurfaceBrushProperty">
+      <summary>Identifies the EmptySurfaceBrush dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.FieldOfViewProperty">
+      <summary>Identifies the FieldOfView dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.FlipCenterCard">
+      <summary>Represents the <strong>FlipCenterCard</strong> command, which requests that the center card be flipped.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.IsCardFlippingEnabledProperty">
+      <summary>Identifies the IsCardFlippingEnabled
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.ShowReflectionsProperty">
+      <summary>Identifies the ShowReflections dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsCountProperty">
+      <summary>Identifies the SideCardsCount dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsXAngleProperty">
+      <summary>Identifies the SideCardsXAngle dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsXOffsetProperty">
+      <summary>Identifies the SideCardsXOffset dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsXSpacingProperty">
+      <summary>Identifies the SideCardsXSpacing dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsYAngleProperty">
+      <summary>Identifies the SideCardsYAngle dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsZOffsetProperty">
+      <summary>Identifies the SideCardsZOffset dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SideCardsZSpacingProperty">
+      <summary>Identifies the SideCardsZSpacing dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.CardflowView3D.SurfacesProperty">
+      <summary>Identifies the Surfaces attached property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>ChameleonTheme</strong> class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GetGradientDarkColor(System.Windows.DependencyObject)">
+      <summary>Gets the bottom (dark) color that will be used to create the gradient scheme.</summary>
+      <returns>A <strong>Color</strong> representing the bottom (dark) color that will be used to create the gradient scheme. See Remarks for default appearance.</returns>
+      <param name="obj">
+        <list type="termdef">
+          <item>
+            <description>The dependency object from which the property value is read.</description>
+          </item>
+        </list>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GetGradientLightColor(System.Windows.DependencyObject)">
+      <summary>Gets the top (light) color that will be used to create the gradient scheme.</summary>
+      <returns>A <strong>Color</strong> representing the top (light) color that will be used to create the gradient scheme. See Remarks for default appearance.</returns>
+      <param name="obj">
+        <list type="termdef">
+          <item>
+            <description>The dependency object from which the property value is read.</description>
+          </item>
+        </list>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GetTitleRegionOrientation(System.Windows.DependencyObject)">
+      <summary>Gets a value representing the orientation of the title region.</summary>
+      <returns>A ChameleonTitleRegionOrientation value
+representing the orientation of the title region. By default, <strong>ChameleonTitleRegionOrientation.Upward</strong> for the cards located to the left of the
+center card and <strong>ChameleonTitleRegionOrientation.Downward</strong> for the cards located to the right.</returns>
+      <param name="obj">
+        <list type="termdef">
+          <item>
+            <description>The dependency object from which the property value is read.</description>
+          </item>
+        </list>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GetTitleRegionPosition(System.Windows.DependencyObject)">
+      <summary>Gets a value representing the position of the title region on a surface (see Remarks).</summary>
+      <returns>A ChameleonTitleRegionPosition value representing the
+position of the title region on a surface.</returns>
+      <param name="obj">
+        <list type="termdef">
+          <item>
+            <description>The dependency object from which the property value is read.</description>
+          </item>
+        </list>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.SetGradientDarkColor(System.Windows.DependencyObject,System.Windows.Media.Color)">
+      <summary>Sets the bottom (dark) color that will be used to create the gradient scheme.</summary>
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">A <strong>Color</strong> representing the bottom (dark) color that will be used to create the gradient scheme. See Remarks for default appearance.</param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.SetGradientLightColor(System.Windows.DependencyObject,System.Windows.Media.Color)">
+      <summary>Sets the top (light) color that will be used to create the gradient scheme.</summary>
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">A <strong>Color</strong> representing the top (light) color that will be used to create the gradient scheme. See Remarks for default appearance.</param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.SetTitleRegionOrientation(System.Windows.DependencyObject,Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionOrientation)">
+      <summary>Sets a value representing the orientation of the title region.</summary>
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">A ChameleonTitleRegionOrientation value
+representing the orientation of the title region. By default, <strong>ChameleonTitleRegionOrientation.Upward</strong>.</param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ChameleonTheme.SetTitleRegionPosition(System.Windows.DependencyObject,Xceed.Wpf.DataGrid.Views.ChameleonTitleRegionPosition)">
+      <summary>Sets a value representing the position of the title region on a surface (see Remarks).</summary>
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">A ChameleonTitleRegionPosition value representing the
+position of the title region on a surface.</param>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ChameleonTheme.DefaultDataRegionConfiguration">
+      <summary>Gets or sets the RegionConfiguration that will be applied to
+all <strong>data regions</strong> on all surfaces for which a <see cref="Xceed.Wpf.DataGrid.v6.5~Xceed.Wpf.DataGrid.Views.Surfaces.CompleteSurfaceConfiguration~DataRegionConfiguration.html">DataRegionConfiguration</see> has not been
+explicitly provided.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ChameleonTheme.DefaultImageRegionConfiguration">
+      <summary>Gets or sets the RegionConfiguration that will be applied to
+all <strong>image regions</strong> on all surfaces for which a <see cref="Xceed.Wpf.DataGrid.v6.5~Xceed.Wpf.DataGrid.Views.Surfaces.RegionConfiguration.html">RegionConfiguration</see> has not been explicitly provided.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ChameleonTheme.DefaultTitleRegionConfiguration">
+      <summary>Gets or sets the RegionConfiguration that will be applied to
+all <strong>title regions</strong> on all surfaces for which a <see cref="Xceed.Wpf.DataGrid.v6.5~Xceed.Wpf.DataGrid.Views.Surfaces.CompleteSurfaceConfiguration~TitleRegionConfiguration.html">TitleRegionConfiguration</see> has not
+been explicitly provided.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GradientDarkColor">
+      <summary>Gets or sets the bottom (dark) color that will be used to create the gradient scheme.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GradientLightColor">
+      <summary>Gets or sets the top (light) color that will be used to create the gradient scheme.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ChameleonTheme.TitleRegionOrientation">
+      <summary>Gets or sets a value representing the orientation of the title region.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ChameleonTheme.TitleRegionPosition">
+      <summary>Gets or sets a value representing the position of the title region on a surface (see Remarks).</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GradientDarkColorProperty">
+      <summary>Identifies the GradientDarkColor attached
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTheme.GradientLightColorProperty">
+      <summary>Identifies the GradientLightColor attached
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTheme.TitleRegionOrientationProperty">
+      <summary>Identifies the TitleRegionOrientation
+dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ChameleonTheme.TitleRegionPositionProperty">
+      <summary>Identifies the TitleRegionPosition attached
+property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalBlackTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>ElementBlackTheme</strong> class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalBlackTheme.GetTitleRegionPosition(System.Windows.DependencyObject)">
+      <summary>Gets a value representing the position of the title region on a surface (see Remarks).</summary>
+      <returns>An ElementalTitleRegionPosition value representing the
+position of the title region on a surface.</returns>
+      <param name="obj">
+        <list type="termdef">
+          <item>
+            <description>The dependency object from which the property value is read.</description>
+          </item>
+        </list>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalBlackTheme.SetTitleRegionPosition(System.Windows.DependencyObject,Xceed.Wpf.DataGrid.Views.ElementalTitleRegionPosition)">
+      <summary>Sets a value representing the position of the title region on a surface (see Remarks).</summary>
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">An ElementalTitleRegionPosition value representing the
+position of the title region on a surface.</param>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.Views.ElementalBlackTheme.TitleRegionPosition">
+      <summary>Gets or sets a value representing the position of the title region on a surface (see Remarks).</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ElementalBlackTheme.TitleRegionPositionProperty">
+      <summary>Identifies the TitleRegionPosition
+attached property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalBlueTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>ElementalBlueTheme</strong> class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalBlueTheme.GetTitleRegionPosition(System.Windows.DependencyObject)">
+      <param name="obj">
+        <list type="termdef">
+          <item>
+            <description>The dependency object from which the property value is read.</description>
+          </item>
+        </list>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalBlueTheme.SetTitleRegionPosition(System.Windows.DependencyObject,Xceed.Wpf.DataGrid.Views.ElementalTitleRegionPosition)">
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">An ElementalTitleRegionPosition value representing the
+position of the title region on a surface.</param>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ElementalBlueTheme.TitleRegionPositionProperty">
+      <summary>Identifies the TitleRegionPosition
+attached property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalSilverTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>ElementalSilverTheme</strong> class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalSilverTheme.GetTitleRegionPosition(System.Windows.DependencyObject)">
+      <param name="obj">
+        <list type="termdef">
+          <item>
+            <description>The dependency object from which the property value is read.</description>
+          </item>
+        </list>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.Views.ElementalSilverTheme.SetTitleRegionPosition(System.Windows.DependencyObject,Xceed.Wpf.DataGrid.Views.ElementalTitleRegionPosition)">
+      <param name="obj">The dependency object to which the attached property is written.</param>
+      <param name="value">An ElementalTitleRegionPosition value representing the
+position of the title region on a surface.</param>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.Views.ElementalSilverTheme.TitleRegionPositionProperty">
+      <summary>Identifies the TitleRegionPosition
+attached property.</summary>
+    </member>
+  </members>
+</doc>

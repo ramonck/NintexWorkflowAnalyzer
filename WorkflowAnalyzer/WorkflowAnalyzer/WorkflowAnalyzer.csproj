@@ -19,7 +19,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
-    <PublishUrl>C:\WorkflowAnalyzer\</PublishUrl>
+    <PublishUrl>D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\dist\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -29,7 +29,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>https://WorkflowAnalyzer.codeplex.com/releases/clickonce/</InstallUrl>
+    <InstallUrl>https://github.com/ramonck/NintexWorkflowAnalyzer/</InstallUrl>
     <UpdateUrl>https://WorkflowAnalyzer.codeplex.com/releases/clickonce/</UpdateUrl>
     <SupportUrl>http://workflowanalyzer.codeplex.com</SupportUrl>
     <TargetCulture>en</TargetCulture>
@@ -102,8 +102,9 @@
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="ScintillaNET">
-      <HintPath>..\..\..\..\Libraries\ScintillaNET.dll</HintPath>
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -129,8 +130,40 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.Controls.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.Controls.6.5.18059.19030\lib\net40\Xceed.Wpf.Controls.v6.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Xceed.Wpf.DataGrid">
       <HintPath>..\..\..\..\Libraries\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.ThemePack.1.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.1.6.5.18059.19030\lib\net40\Xceed.Wpf.DataGrid.ThemePack.1.v6.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.ThemePack.2.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.2.6.5.18059.19030\lib\net40\Xceed.Wpf.DataGrid.ThemePack.2.v6.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.ThemePack.3.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.3.6.5.18059.19030\lib\net40\Xceed.Wpf.DataGrid.ThemePack.3.v6.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.ThemePack.4.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.4.6.5.18059.19030\lib\net40\Xceed.Wpf.DataGrid.ThemePack.4.v6.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.ThemePack.5.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.5.6.5.18059.19030\lib\net40\Xceed.Wpf.DataGrid.ThemePack.5.v6.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.DataGrid.6.5.18059.19030\lib\net40\Xceed.Wpf.DataGrid.v6.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.Views3D.v6.5, Version=6.5.18059.19030, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.DataGrid.Views3D.6.5.18059.19030\lib\net40\Xceed.Wpf.DataGrid.Views3D.v6.5.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -295,6 +328,7 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

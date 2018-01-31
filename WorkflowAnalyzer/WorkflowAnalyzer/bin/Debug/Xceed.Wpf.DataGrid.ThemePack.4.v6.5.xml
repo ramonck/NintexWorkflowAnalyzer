@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Xceed.Wpf.DataGrid.ThemePack.4.v6.5</name>
+  </assembly>
+  <members>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.ColorMode">
+      <summary>A SharedThemeResourceDictionary that targets the Xceed.Wpf.DataGrid.ThemePack.4 assembly.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor">
+      <summary>Value representing the accent color used by a Metro theme.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Gold">
+      <summary>The gold accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.LightGreen">
+      <summary>The light green accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Blue">
+      <summary>The blue accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.MediumVioletRed">
+      <summary>The medium violet red accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Brown">
+      <summary>The brown accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.DarkRed">
+      <summary>The dark red accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.PaleVioletRed">
+      <summary>The pale violet red accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.DarkViolet">
+      <summary>The dark violet accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.DarkSlateBlue">
+      <summary>The dark slate blue accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.RoyalBlue">
+      <summary>The royal blue accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Teal">
+      <summary>The teal accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Green">
+      <summary>The green accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Lime">
+      <summary>The lime accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.LightSalmon">
+      <summary>The light salmon accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Red">
+      <summary>The red accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.DeepPink">
+      <summary>The deep pink accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Purple">
+      <summary>The purple accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.DeepSkyBlue">
+      <summary>The deep sky blue accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.DarkTurquoise">
+      <summary>The dark turquoise accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Turquoise">
+      <summary>The turquoise accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.YellowGreen">
+      <summary>The yellow green accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.DarkYellow">
+      <summary>The dark yellow accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Pink">
+      <summary>The pink accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.LightSeaGreen">
+      <summary>The light sea green accent color.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.MetroAccentColor.Orange">
+      <summary>The orange accent color.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.StyleUsageMode">
+      <summary>Value indicating whether styles in a theme resource dictionary will be applied implicitly or explicitly.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.StyleUsageMode.Implicit">
+      <summary>Styles will be applied implicitly (automatically).</summary>
+    </member>
+    <member name="F:Xceed.Wpf.DataGrid.ThemePack.StyleUsageMode.Explicit">
+      <summary>Styles will be applied explicitly. (Defined styles will not be overridden.)</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.MetroDarkThemeResourceDictionary">
+      <summary>Represents the resource dictionary for the dark-toned Metro theme.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.MetroLightThemeResourceDictionary">
+      <summary>Represents the resource dictionary for the light-toned Metro theme.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.MetroTheme">
+      <summary>Represents the Metro theme with the Modern UI look and feel.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.MetroThemeResourceDictionaryBase">
+      <summary>Base class of the Metro themes.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.ThemeResourceDictionary">
+      <summary>Base class for all theme resource dictionaries.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.MetroDarkThemeResourceDictionary.#ctor">
+      <summary>Initializes a new instance of the MetroDarkThemeResourceDictionary class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.MetroLightThemeResourceDictionary.#ctor">
+      <summary>Iitializes a new instance of the MetroLightThemeResourceDictionary class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.MetroTheme.#ctor">
+      <summary>Initializes a new instance of the MetroTheme class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.MetroTheme.#ctor">
+      <summary>Initializes a new instance of the MetroTheme class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.MetroThemeResourceDictionaryBase.UpdateResources">
+      <summary>Determines, usually according to the value of the StyleUsageMode property, which resources
+should be used by the theme resource dictionary.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.ThemePack.MetroThemeResourceDictionaryBase.AccentColor">
+      <summary>Gets or sets the accent color to use with the Metro theme.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.ThemePack.MetroThemeResourceDictionaryBase.DefaultAccentColor">
+      <summary>Gets the default accent color.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.ThemeResourceDictionary.UpdateResources">
+      <summary>Determines, usually according to the value of the StyleUsageMode property, which resources
+should be used by the theme resource dictionary.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.DataGrid.ThemePack.ThemeResourceDictionary.StyleUsageMode">
+      <summary>Gets or sets a value indicating whether styles in a theme resource dictionary will be applied implicitly or explicitly.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.Markup.MetroThemeKey">
+      <summary>
+        <span style="WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FLOAT: none; COLOR: rgb(0,0,0); FONT: 14px Verdana, Arial, Helvetica, sans-serif; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(251,251,251); TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal">
+Represents the ThemeKey for the Metro theme.</span>
+      </summary>
+    </member>
+  </members>
+</doc>

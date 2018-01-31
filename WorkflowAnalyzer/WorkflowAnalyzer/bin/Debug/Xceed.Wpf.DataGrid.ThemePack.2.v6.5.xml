@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Xceed.Wpf.DataGrid.ThemePack.2.v6.5</name>
+  </assembly>
+  <members>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.GlassTheme">
+      <summary>Represents the Glass theme.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.GlassTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>GlassTheme</strong> class.</summary>
+    </member>
+  </members>
+</doc>

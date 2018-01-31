@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PluginManager</name>
+    </assembly>
+    <members>
+        <member name="T:PluginManager.ExternalWebBrowserTabPluginBase">
+            <summary>
+            Plug-in Base class for Web Tab plug-ins.
+            </summary>
+        </member>
+        <member name="F:PluginManager.ExternalWebBrowserTabPluginBase.TabBrowser">
+            <summary>
+            Browser object to be loaded in Tab.
+            </summary>
+        </member>
+        <member name="M:PluginManager.ExternalWebBrowserTabPluginBase.BuildInteropObject">
+            <summary>
+            Passes Tab and Browser object to PluginLoader.
+            </summary>
+        </member>
+        <member name="T:PluginManager.NamespaceDoc">
+            <summary>
+            Contains plug-in based classes.
+            </summary>
+        </member>
+        <member name="T:PluginManager.RuleDefinition">
+            <summary>
+            Rule Definition class for use with Rule Definition plug-ins.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinition.Name">
+            <summary>
+            Name of Rule.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinition.Description">
+            <summary>
+            Description of Rule.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinition.Category">
+            <summary>
+            Category of rule.
+            0 - Informational
+            1 - Warning
+            2 - Problematic
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinition.Url">
+            <summary>
+            URL to article for more information.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinition.Valid">
+            <summary>
+            Indicates whether rule validated.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinition.Parameters">
+            <summary>
+            Additional parameters or information to provide.
+            </summary>
+        </member>
+        <member name="T:PluginManager.ExternalTabPluginBase">
+            <summary>
+            Plug-in Base class for Tab plug-ins.
+            </summary>
+        </member>
+        <member name="P:PluginManager.ExternalTabPluginBase.InteropObject">
+            <summary>
+            Boxed object to be passed to PluginLoader. By Default this object is set to RuleDefinition defined by properties found in this class.
+            </summary>
+        </member>
+        <member name="P:PluginManager.ExternalTabPluginBase.PluginType">
+            <summary>
+            Returns a PluginType of ExternalTab.
+            </summary>
+        </member>
+        <member name="F:PluginManager.ExternalTabPluginBase.ExternalTabPage">
+            <summary>
+            TabPage object to be passed to PluginLoader.
+            </summary>
+        </member>
+        <member name="M:PluginManager.ExternalTabPluginBase.Execute">
+            <summary>
+            Main method of plug-in. 
+            </summary>
+        </member>
+        <member name="M:PluginManager.ExternalTabPluginBase.BuildInteropObject">
+            <summary>
+            By default this method loads a TabPage object to the PluginLoader.
+            </summary>
+        </member>
+        <member name="E:PluginManager.ExternalTabPluginBase.OnPluginLoad">
+            <summary>
+            Event triggers when plug-in loading starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.ExternalTabPluginBase.OnPluginLoaded">
+            <summary>
+            Event triggers when plug-in is loaded..
+            </summary>
+        </member>
+        <member name="E:PluginManager.ExternalTabPluginBase.OnPluginUnload">
+            <summary>
+            Event triggers when plug-in unloading starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.ExternalTabPluginBase.OnPluginUnloaded">
+            <summary>
+            Event triggers when plug-in is unloaded.
+            </summary>
+        </member>
+        <member name="E:PluginManager.ExternalTabPluginBase.OnExecuteStart">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.ExternalTabPluginBase.OnExecuting">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method is running.
+            </summary>
+        </member>
+        <member name="E:PluginManager.ExternalTabPluginBase.OnExecuteComplete">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method completes.
+            </summary>
+        </member>
+        <member name="T:PluginManager.RuleDefinitionPluginBase">
+            <summary>
+            Plug-in Base class for Rule Definition plug-ins.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.InteropObject">
+            <summary>
+            Boxed object to be passed to PluginLoader. By Default this object is set to RuleDefinition defined by properties found in this class.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.PluginType">
+            <summary>
+            Returns a PluginType of RuleDefinition
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.PropertyBag">
+            <summary>
+            Dictionary to store interop properties in.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.Name">
+            <summary>
+            Name of Rule.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.Category">
+            <summary>
+            Category of rule.
+            0 - Informational
+            1 - Warning
+            2 - Problematic
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.Version">
+            <summary>
+            Version of plug-in.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.Valid">
+            <summary>
+            Indicates whether rule validated.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.Description">
+            <summary>
+            Description of Rule.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.Url">
+            <summary>
+            URL to article for more information.
+            </summary>
+        </member>
+        <member name="P:PluginManager.RuleDefinitionPluginBase.Parameters">
+            <summary>
+            Additional parameters or information to provide.
+            </summary>
+        </member>
+        <member name="M:PluginManager.RuleDefinitionPluginBase.Execute">
+            <summary>
+            Main method of plug-in. All validation code should be placed here.
+            </summary>
+        </member>
+        <member name="M:PluginManager.RuleDefinitionPluginBase.RecursiveActionSearch(System.Action{PluginManager.NWF.NWActionConfig},System.Collections.Generic.List{PluginManager.NWF.NWActionConfig})">
+            <summary>
+            Recursively process action collection and execute delegate.
+            </summary>
+            <param name="method">Delegate that will be executed on each action.</param>
+            <param name="actions">Collection of actions to process.</param>
+        </member>
+        <member name="M:PluginManager.RuleDefinitionPluginBase.BuildInteropObject">
+            <summary>
+            By default this method loads a RuleDefinition object to the PluginLoader.
+            </summary>
+        </member>
+        <member name="E:PluginManager.RuleDefinitionPluginBase.OnPluginLoad">
+            <summary>
+            Event triggers when plug-in loading starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.RuleDefinitionPluginBase.OnPluginLoaded">
+            <summary>
+            Event triggers when plug-in is loaded..
+            </summary>
+        </member>
+        <member name="E:PluginManager.RuleDefinitionPluginBase.OnPluginUnload">
+            <summary>
+            Event triggers when plug-in unloading starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.RuleDefinitionPluginBase.OnPluginUnloaded">
+            <summary>
+            Event triggers when plug-in is unloaded.
+            </summary>
+        </member>
+        <member name="E:PluginManager.RuleDefinitionPluginBase.OnExecuteStart">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.RuleDefinitionPluginBase.OnExecuting">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method is running.
+            </summary>
+        </member>
+        <member name="E:PluginManager.RuleDefinitionPluginBase.OnExecuteComplete">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method completes.
+            </summary>
+        </member>
+        <member name="T:PluginManager.PluginLoader">
+            <summary>
+            Handles loading and parsing of plug-ins.
+            </summary>
+        </member>
+        <member name="F:PluginManager.PluginLoader.BpaDefinitions">
+            <summary>
+            BPA Rule Definition plug-ins.
+            </summary>
+        </member>
+        <member name="F:PluginManager.PluginLoader.TabPages">
+            <summary>
+            Tab Page plug-ins.
+            </summary>
+        </member>
+        <member name="T:PluginManager.PluginLoader.PluginType">
+            <summary>
+            Specifies the type of plug-in.
+            </summary>
+        </member>
+        <member name="M:PluginManager.PluginLoader.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:PluginManager.PluginLoader.InitializeRuleDefinitionPlugins">
+            <summary>
+            Executes Main "Execute()" method on each Rule Definition plug-in.
+            </summary>
+        </member>
+        <member name="M:PluginManager.PluginLoader.InitializeUtilityPlugins">
+            <summary>
+            Executes Main "Execute()" method on each Utility plug-in.
+            </summary>
+        </member>
+        <member name="M:PluginManager.PluginLoader.InitializeExternalTabPlugins">
+            <summary>
+            Executes Main "Execute()" method on each Tab plug-in including Web based Tabs.
+            </summary>
+        </member>
+        <member name="T:PluginManager.Plugins.IExternalExtension">
+            <summary>
+            Interface for all plug-in types.
+            </summary>
+        </member>
+        <member name="T:PluginManager.Plugins.IPlugin">
+            <summary>
+            Interface for all plug-in types. Use IExternalExtension instead of using this interface directly.
+            </summary>
+        </member>
+        <member name="P:PluginManager.Plugins.IPlugin.InteropObject">
+            <summary>
+            Used to box an object to be passed to PluginManager.
+            </summary>
+        </member>
+        <member name="P:PluginManager.Plugins.IPlugin.PluginType">
+            <summary>
+            Identifies the plug-in type.
+            </summary>
+        </member>
+        <member name="M:PluginManager.Plugins.IPlugin.Execute">
+            <summary>
+            Executes Main "Execute()" method in plug-in.
+            </summary>
+        </member>
+        <member name="M:PluginManager.Plugins.IPlugin.BuildInteropObject">
+            <summary>
+            Builds/instantiates InteropObject.
+            </summary>
+        </member>
+        <member name="E:PluginManager.Plugins.IPlugin.OnPluginLoad">
+            <summary>
+            Event triggers when plug-in loading starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.Plugins.IPlugin.OnPluginLoaded">
+            <summary>
+            Event triggers when plug-in is loaded..
+            </summary>
+        </member>
+        <member name="E:PluginManager.Plugins.IPlugin.OnPluginUnload">
+            <summary>
+            Event triggers when plug-in unloading starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.Plugins.IPlugin.OnPluginUnloaded">
+            <summary>
+            Event triggers when plug-in is unloaded.
+            </summary>
+        </member>
+        <member name="E:PluginManager.Plugins.IPlugin.OnExecuteStart">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method starts.
+            </summary>
+        </member>
+        <member name="E:PluginManager.Plugins.IPlugin.OnExecuting">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method is running.
+            </summary>
+        </member>
+        <member name="E:PluginManager.Plugins.IPlugin.OnExecuteComplete">
+            <summary>
+            Event triggers when plug-in Main "Execute()" method completes.
+            </summary>
+        </member>
+    </members>
+</doc>

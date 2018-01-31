@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Xceed.Wpf.DataGrid.ThemePack.5.v6.5</name>
+  </assembly>
+  <members>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.Windows10Theme">
+      <summary>Represents the Windows10 theme.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.Windows10Theme.#ctor">
+      <summary>Initializes a new instance of the <strong>Windows10</strong> class.</summary>
+    </member>
+  </members>
+</doc>

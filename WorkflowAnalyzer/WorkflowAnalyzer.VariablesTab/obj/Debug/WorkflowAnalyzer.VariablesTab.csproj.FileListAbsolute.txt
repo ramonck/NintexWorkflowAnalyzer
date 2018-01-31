@@ -1,2 +1,7 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.VariablesTab\obj\Debug\WorkflowAnalyzer.VariablesTab.csprojResolveAssemblyReference.cache
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.VariablesTab\obj\Debug\WorkflowAnalyzer.VariablesTab.Properties.Resources.resources
 D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.VariablesTab\obj\Debug\WorkflowAnalyzer.VariablesTab.csproj.GenerateResource.Cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.VariablesTab.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.VariablesTab.pdb
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.VariablesTab\obj\Debug\WorkflowAnalyzer.VariablesTab.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.VariablesTab\obj\Debug\WorkflowAnalyzer.VariablesTab.pdb

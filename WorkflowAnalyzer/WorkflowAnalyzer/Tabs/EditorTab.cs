@@ -53,19 +53,18 @@ namespace WorkflowAnalyzer.Tabs
             previewBrowser.Dock = DockStyle.Fill;
 
             #region ExternalXml
-            Scintilla exEditor = new Scintilla();
+            ScintillaNET.Scintilla exEditor = new ScintillaNET.Scintilla();
 
             exEditor.Dock = DockStyle.Fill;
 
             splitContainer.Panel1.Controls.Add(exEditor);
 
-            exEditor.ConfigurationManager.Language = "xml";
-            exEditor.Margins.Margin0.Width = 10;
-            exEditor.Margins.Margin2.Width = 20;
-            exEditor.Folding.UseCompactFolding = true;
-            exEditor.Lexing.Lexer = Lexer.Xml;
-            exEditor.Lexing.LexerName = "xml";
-            exEditor.Folding.IsEnabled = true;
+            exEditor.Margins.Left = 10;
+            exEditor.Margins.Right = 20;
+            exEditor.Lexer = Lexer.Xml;
+            exEditor.LexerLanguage = "xml";
+            exEditor.SetProperty("fold", "1");
+            exEditor.SetProperty("fold.compact", "1");
             exEditor.Text = (nwfContext.NWFXmlDocument.InnerXml).Replace("><", ">" + Environment.NewLine + "<");
             #endregion
 
@@ -77,13 +76,12 @@ namespace WorkflowAnalyzer.Tabs
             splitContainer.Panel1.Controls.Add(inEditor);
             inEditor.Visible = false;
 
-            inEditor.ConfigurationManager.Language = "xml";
-            inEditor.Margins.Margin0.Width = 10;
-            inEditor.Margins.Margin2.Width = 20;
-            inEditor.Folding.UseCompactFolding = true;
-            inEditor.Lexing.Lexer = Lexer.Xml;
-            inEditor.Lexing.LexerName = "xml";
-            inEditor.Folding.IsEnabled = true;
+            inEditor.Margins.Left = 10;
+            inEditor.Margins.Right = 20;
+            inEditor.Lexer = Lexer.Xml;
+            inEditor.LexerLanguage = "xml";
+            inEditor.SetProperty("fold", "1");
+            inEditor.SetProperty("fold.compact", "1");
             var xmlNode = nwfContext.NWFXmlDocument.ChildNodes.Item(1);
             if (xmlNode != null)
                 inEditor.Text = (xmlNode.FirstChild.InnerText).Replace("><", ">" + Environment.NewLine + "<");

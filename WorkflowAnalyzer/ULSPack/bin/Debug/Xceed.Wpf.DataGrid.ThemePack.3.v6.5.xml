@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Xceed.Wpf.DataGrid.ThemePack.3.v6.5</name>
+  </assembly>
+  <members>
+    <member name="T:Xceed.Wpf.DataGrid.ThemePack.LiveExplorerTheme">
+      <summary>Represents the theme used in Xceed DataGrid for WPF Live Explorer.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.DataGrid.ThemePack.LiveExplorerTheme.#ctor">
+      <summary>Initializes a new instance of the <strong>LiveExplorerTheme</strong> class.</summary>
+    </member>
+  </members>
+</doc>

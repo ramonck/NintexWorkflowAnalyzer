@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Xceed.Wpf.Controls.v6.5</name>
+  </assembly>
+  <members>
+    <member name="T:Xceed.Wpf.Controls.AutoSelectBehavior">
+      <summary>Value indicating how the content of an AutoSelectTextBox is selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.AutoSelectBehavior.Never">
+      <summary>The content is never selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.AutoSelectBehavior.OnFocus">
+      <summary>The context is selected when the AutoSelectTextBox received the focus.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.DateComponent">
+      <summary>Value representing a date component.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateComponent.Year">
+      <summary>A year date component.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateComponent.Month">
+      <summary>A month date component.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateComponent.Day">
+      <summary>A day date component.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.DateTimeMaskMode">
+      <summary>Value indicating the mode used to mask inputted text as a date and time format.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeMaskMode.Custom">
+      <summary>The CustomFormatSpecifier will be used.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeMaskMode.ShortDate">
+      <summary>The short date mask mode will be used.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeMaskMode.ShortDateAndShortTime">
+      <summary>The short date and time mask mode will be used.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeMaskMode.ShortDateAndLongTime">
+      <summary>The short date and long time mask mode will be used.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeMaskMode.ShortTime">
+      <summary>The short time mask mode will be used.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeMaskMode.LongTime">
+      <summary>The long time mask mode will be used.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.InsertKeyMode">
+      <summary>Value representing the text insertion mode of the masked text box.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.InsertKeyMode.Default">
+      <summary>The current INSERT key mode of the keyboard will be used.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.InsertKeyMode.Insert">
+      <summary>The insertion mode is always enabled.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.InsertKeyMode.Overwrite">
+      <summary>The overwrite mode is always enabled.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.MaskFormat">
+      <summary>Value representing the format that will be used when the inputted text is copied to the clipboard.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskFormat.ExcludePromptAndLiterals">
+      <summary>Prompt characters and literals will be excluded.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskFormat.IncludeLiterals">
+      <summary>Only literals will be included.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskFormat.IncludePrompt">
+      <summary>Only prompt characters will be included.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskFormat.IncludePromptAndLiterals">
+      <summary>Both prompt characters and literals will be included.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs">
+      <summary>Provides information on input text whose mask is being automatically completed.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.AutoSelectTextBox">
+      <summary>Represents a text box whose content is selected when it receives the focus as well as performs automatic focus navigation when the caret reaches the
+extremities of the text range.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.CalendarItem">
+      <summary>Represents an item (day) in the DatePicker's calendar.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.CheckBox">
+      <summary>Represents a control used to edit and display boolean values. This class should be used rather than the system provided <strong>CheckBox</strong> control which
+causes issues with focus when used within a focus scope (e.g., <strong>DataGridControl</strong>).</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.DateInputScope">
+      <summary>
+        <para>Represents an element which filters input that is not numerical.</para>
+      </summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.DateLayoutPanel">
+      <summary>Represents a panel that can be used to layout the date components.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.DatePicker">
+      <summary>Represents a control used to edit and display dates.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.DatePickerCommands">
+      <summary>Provides a set of commands that can be used to change the selected and displayed dates in the DatePicker control.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.DateTimeTextBox">
+      <summary>Represents a control that limits the value extracted from the inputted text to be a <strong>DateTime</strong> value.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.Licenser">
+      <summary>Class that registers the classes defined in the Xceed.Wpf.Controls assembly.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.MaskedTextBox">
+      <summary>Represents a control that limits the inputted text to be of the format determined by the specified mask.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.NavigableComboBox">
+      <summary>Represents a combo box control that supports navigation within its drop-down section.<!--DXMETADATA end --></summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.NumericInputScope">
+      <summary>
+        <para>Represents an element which filters input that is not numerical. The <strong>NumericInputscope</strong> class will prevent modifications from being applied
+until the focus is removed from the scope.</para>
+      </summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.NumericTextBox">
+      <summary>Represents a control that limits the value extracted from the inputted text to be a numeric value.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.QueryMoveFocusEventArgs">
+      <summary>Provides information on the focus navigation.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.QueryTextFromValueEventArgs">
+      <summary>Provides information about the value and text being queried when an attempt is made to convert the specified value into its string representation.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.QueryValueFromTextEventArgs">
+      <summary>Provides information about the text and value being queried when an attempt is made to extract a value from the specified text.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.TextBlockLite">
+      <summary>Represents a simpler and more performant version of a TextBlock.</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.ValueRangeTextBox">
+      <summary>Represents a control that limits the value extracted from the inputted text to be within the bounds determined by the MinValue and <see cref="Xceed.Wpf.Controls.v6.5~Xceed.Wpf.Controls.ValueRangeTextBox~MaxValue.html">MaxValue</see> properties.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs.#ctor(System.ComponentModel.MaskedTextProvider,System.Int32,System.Int32,System.String)">
+      <summary>Initializes a new instance of the <strong>AutoCompletingMaskEventArgs</strong> class specifying the inputted text as well as the information required to
+automatically complete the mask.</summary>
+      <param name="maskedTextProvider">A copy of the <strong>MaskTextProvider</strong> that was used to mask the inputted text.</param>
+      <param name="startPosition">A zero-based value indicating the position at which the automatic completion of the mask starts.</param>
+      <param name="selectionLength">A value indicating the number of selected characters.</param>
+      <param name="input">The inputted text.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs.AutoCompleteStartPosition">
+      <summary>Gets or sets a value indicating the position at which the automatic completion of the mask starts.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs.AutoCompleteText">
+      <summary>Gets or sets the text that will be used to automatically complete the mask.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs.Input">
+      <summary>Gets the input text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs.MaskedTextProvider">
+      <summary>Gets a copy of the <strong>MaskTextProvider</strong> that was used to mask the inputted text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs.SelectionLength">
+      <summary>
+        <para>Gets a value indicating the number of selected characters.</para>
+      </summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoCompletingMaskEventArgs.StartPosition">
+      <summary>Gets the position at which the input text starts.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.AutoSelectTextBox.#ctor">
+      <summary>Initializes a new instance of the AutoSelectTextBox class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.AutoSelectTextBox.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewGotKeyboardFocus</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyboardFocusChangedEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.AutoSelectTextBox.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewKeyDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.AutoSelectTextBox.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewMouseLeftButtonDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>MouseButtonEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.AutoSelectTextBox.OnTextChanged(System.Windows.Controls.TextChangedEventArgs)">
+      <summary>Raises the <strong>TextChanged</strong> event.</summary>
+      <param name="e">A <strong>TextChangedEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoSelectTextBox.AutoMoveFocus">
+      <summary>Gets or sets a value indicating if the focus can navigate in the appropriate flow direction (e.g., from one cell to another when a cell is being edited) when
+the cursor is at the beginning or end of the auto-select text box.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.AutoSelectTextBox.AutoSelectBehavior">
+      <summary>Gets or sets a value indicating how the content of the auto-select text box is selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.AutoSelectTextBox.AutoMoveFocusProperty">
+      <summary>Identifies the AutoMoveFocus dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.AutoSelectTextBox.AutoSelectBehaviorProperty">
+      <summary>Identifies the AutoSelectBehavior dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.AutoSelectTextBox.QueryMoveFocusEvent">
+      <summary>Occurs before the focus navigates to another element.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CalendarItem.Content">
+      <summary>Gets or sets the content of the CalendarItem.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CalendarItem.ContentTemplate">
+      <summary>Gets or sets the template used to display the content of the <see cref="Xceed.Wpf.Controls.v6.5~Xceed.Wpf.Controls.CalendarItem.html">CalendarItem</see>.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CalendarItem.ContentTemplateSelector">
+      <summary>Gets or sets a template selector that enables an application writer to provide custom template-selection logic.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CalendarItem.Date">
+      <summary>Gets the date represented by the <strong>CalendarItem</strong>.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CalendarItem.HasContent">
+      <summary>Gets a value indicating if the CalendarItem contains content.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CalendarItem.IsPreview">
+      <summary>Gets a value indicating if the <strong>CalendarItem</strong> represents a preview day.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CalendarItem.IsToday">
+      <summary>Gets a value indicating if the <strong>CalendarItem</strong> represents the present date ("Today").</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CalendarItem.ContentProperty">
+      <summary>Identifies the Content dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CalendarItem.ContentTemplateProperty">
+      <summary>Identifies the ContentTemplate dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CalendarItem.ContentTemplateSelectorProperty">
+      <summary>Identifies the ContentTemplateSelector dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CalendarItem.HasContentProperty">
+      <summary>Identifies the HasContent dependency property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.CheckBox.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>KeyDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.CheckBox.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>KeyUp</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.CheckBox.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewKeyDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.CheckBox.OnPreviewKeyUp(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewKeyUp</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.CheckBox.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewMouseLeftButtonDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>MouseButtonEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CheckBox.IsChecked">
+      <summary>Gets or sets a value indicating if the checkbox is checked.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.CheckBox.IsThreeState">
+      <summary>Gets or sets a value indicating if the checkbox can be in an undetermined state: neither checked or unchecked.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CheckBox.CheckedEvent">
+      <summary>Identifies the Checked routed event.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CheckBox.IndeterminateEvent">
+      <summary>Identifies the Indeterminate routed event.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CheckBox.IsCheckedProperty">
+      <summary>Identifies the IsChecked dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CheckBox.IsThreeStateProperty">
+      <summary>Identifies the IsThreeState dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.CheckBox.UncheckedEvent">
+      <summary>Identifies the Unchecked routed event.</summary>
+    </member>
+    <member name="E:Xceed.Wpf.Controls.CheckBox.Checked">
+      <summary>Raised when the checkbox is checked.</summary>
+    </member>
+    <member name="E:Xceed.Wpf.Controls.CheckBox.Indeterminate">
+      <summary>Raised when the checkbox is in an indeterminate state: neither checked or unchecked.</summary>
+    </member>
+    <member name="E:Xceed.Wpf.Controls.CheckBox.Unchecked">
+      <summary>Raised when the checkbox is unchecked.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateInputScope.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+      <summary>
+        <para>Reports a change to the <strong>IsKeyboardFocusWithin</strong><font color="black">property.</font></para>
+      </summary>
+      <param name="e">A <strong>DependencyPropertyChangedEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateInputScope.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>KeyDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DateInputScope.DateOutput">
+      <summary>Gets or sets the final outputted <strong>DateTime</strong> value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DateInputScope.Day">
+      <summary>Gets or sets the day portion of the <strong>DateInputScope</strong>.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DateInputScope.Month">
+      <summary>Gets or sets the month portion of the <strong>DateInputScope</strong>.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DateInputScope.Year">
+      <summary>Gets or sets the year portion of the <strong>DateInputScope</strong>.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateInputScope.DateOutputProperty">
+      <summary>Identifies the DateOutput dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateInputScope.DayProperty">
+      <summary>Identifies the Day dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateInputScope.MonthProperty">
+      <summary>Identifies the Month dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateInputScope.YearProperty">
+      <summary>Identifies the Year dependency property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateLayoutPanel.ArrangeOverride(System.Windows.Size)">
+      <summary>Arranges the child elements of the panel.</summary>
+      <returns>The <strong>Size</strong> that represents the arranged size of the panel.</returns>
+      <param name="finalSize">The <strong>Size</strong> this element uses to arrange its child elements.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateLayoutPanel.GetDateComponent(System.Windows.DependencyObject)">
+      <summary>Gets a value representing the portion of the date displayed in the <strong>DateLayoutPanel</strong>.</summary>
+      <returns>A DateComponent value representing the portion of the data displayed in the
+<strong>DateLayoutPanel</strong>.</returns>
+      <param name="d">The dependency object from which the property value is read. By default, -1.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateLayoutPanel.MeasureOverride(System.Windows.Size)">
+      <summary>Measures the child elements in anticipation of arranging them during the ArrangeOverride pass.</summary>
+      <returns>The <strong>Size</strong> that represents the desired size of the element.</returns>
+      <param name="availableSize">
+        <para>An upper limit <strong>Size</strong><font color="black">that should not be exceeded.</font></para>
+      </param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateLayoutPanel.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewGotKeyboardFocus</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyboardFocusChangedEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateLayoutPanel.SetDateComponent(System.Windows.DependencyObject,Xceed.Wpf.Controls.DateComponent)">
+      <summary>Sets a value representing the portion of the date displayed in the <strong>DateLayoutPanel</strong>.</summary>
+      <param name="d">The dependency object to which the attached property is written.</param>
+      <param name="value">A DateComponent value representing the portion of the date displayed in the
+<strong>DateLayoutPanel</strong>.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DateLayoutPanel.SeparatorTemplate">
+      <summary>Gets or sets the separator <strong>DataTemplate</strong>.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateLayoutPanel.DateComponentProperty">
+      <summary>Identifies the <strong>DateComponent</strong> attached property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateLayoutPanel.SeparatorTemplateProperty">
+      <summary>Identifies the SeparatorTemplate dependency property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DatePicker.OnApplyTemplate">
+      <summary>Builds the visual tree for the element.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DatePicker.OnGotFocus(System.Windows.RoutedEventArgs)">
+      <summary>Invoked when an unhandled <strong>GotFocus</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>RoutedEventArgs</strong><font color="black">that contains the event data.</font></param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DatePicker.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+      <summary>Called when an unhandled PreviewGotKeyboardFocus event reaches this element.</summary>
+      <param name="e">A <strong>KeyboardFocusChangedEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.CalendarItemContainerStyle">
+      <summary>Gets or sets the style to apply to the <see cref="Xceed.Wpf.Controls.v6.5~Xceed.Wpf.Controls.CalendarItem.html">CalendarItem</see>
+container.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.CalendarItemContainerStyleSelector">
+      <summary>Gets or sets a <strong>StyleSelector</strong> which provides custom style-selection logic for a style that can be applied to each generated container element.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.CalendarItems">
+      <summary>Gets the CalendarItems contained in the <strong>DatePicker's</strong> calendar.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.CalendarItemTemplate">
+      <summary>Gets or set the DataTemplate used to display each CalendarItem.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.CalendarItemTemplateSelector">
+      <summary>Gets or sets a <strong>DataTemplateSelector</strong> which provides custom logic for choosing a template used to display each CalendarItem.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.CustomFormatSpecifier">
+      <summary>Gets or sets the custom format specifier that will be used to mask the inputted text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.DateTimeMaskMode">
+      <summary>Gets or sets a value indicating the date and time mask to apply to the inputted text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.DayNames">
+      <summary>
+        <para>Gets or sets a one-dimensional string array <font color="black">containing the culture-specific full names of the days of the week, starting with the first
+day of the week defined by the current culture.</font></para>
+      </summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.DisplayedMonth">
+      <summary>
+        <para>Gets or sets the month currently displayed in the <strong>DatePicker's</strong> calendar.</para>
+      </summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.DisplayedMonthName">
+      <summary>Gets the name of the month currently displayed in the <strong>DatePicker's</strong> calendar.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.DisplayedYear">
+      <summary>Gets or sets the year currently displayed in the <strong>DatePicker's</strong> calendar.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.FormatProvider">
+      <summary>Gets or sets the <strong>IFormatProvider</strong> that will be used to perform type validation.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.HasParsingError">
+      <summary>Gets a value indicating whether an error occurred during the parsing of the value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.HasValidationError">
+      <summary>Gets a value indicating whether an error occurred during the validation of the value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.IsSelectedDateToday">
+      <summary>Gets a value indicating if SelectedDate corresponds to the current date
+("Today").</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.IsValueOutOfRange">
+      <summary>Gets a value indicating if the value is out of range.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.SelectedDate">
+      <summary>Gets or sets the selected date.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.ShortestDayNames">
+      <summary>
+        <para>Gets or sets a one-dimensional string array <font color="black">containing the culture-specific shortest unique abbreviated names of the days of the week,
+starting with the first day of the week defined by the current culture.</font></para>
+      </summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.SyncCalendarWithSelectedDate">
+      <summary>Gets or sets a value indicating if the date displayed in the <em>DatePicker's</em> calendar and the SelectedDate displayed in the <strong>DatePicker's</strong> text box should
+always be synchronized.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DatePicker.TodayContent">
+      <summary>Gets or sets the content of the "Today" button.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.CalendarItemContainerStyleProperty">
+      <summary>Identifies the CalendarItemContainerStyle dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.CalendarItemContainerStyleSelectorProperty">
+      <summary>Identifies the CalendarItemContainerStyleSelector dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.CalendarItemTemplateProperty">
+      <summary>Identifies the CalendarItemTemplate dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.CalendarItemTemplateSelectorProperty">
+      <summary>Identifies the CalendarItemTemplateSelector dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.CustomFormatSpecifierProperty">
+      <summary>Identifies the CustomFormatSpecifier dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.DateTimeMaskModeProperty">
+      <summary>Identifies the DateTimeMaskMode dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.DisplayedMonthNameProperty">
+      <summary>Identifies the DisplayedMonthName dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.DisplayedMonthProperty">
+      <summary>Identifies the DisplayedMonth dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.DisplayedYearProperty">
+      <summary>Identifies the DisplayedYear dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.FormatProviderProperty">
+      <summary>Identifies the FormatProvider dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.HasParsingErrorProperty">
+      <summary>Identifies the HasParsingError dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.HasValidationErrorProperty">
+      <summary>Identifies the HasValidationError dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.IsValueOutOfRangeProperty">
+      <summary>Identifies the IsValueOutOfRange dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.SelectedDateProperty">
+      <summary>Identifies the SelectedDate dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.SyncCalendarWithSelectedDateProperty">
+      <summary>Identifies the SyncCalendarWithSelectedDate dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePicker.TodayContentProperty">
+      <summary>Identifies the TodayContent dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.ChangeDisplayedMonth">
+      <summary>Represents the ChangeDisplayedMonth command, which requests that the currently displayed month be changed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.ChangeDisplayedYear">
+      <summary>Represents the ChangeDisplayedYear command, which requests that the currently displayed year be changed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.ChangeSelectedDay">
+      <summary>Represents the ChangeSelectedDay command, which requests that the selected day be changed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.ChangeSelectedMonth">
+      <summary>Represents the ChangeSelectedMonth command, which requests that the selected month be changed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.ChangeSelectedWeek">
+      <summary>Represents the ChangeWeek command, which requests that the current week be changed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.ChangeSelectedYear">
+      <summary>Represents the ChangeSelectedYear command, which requests that the selected year be changed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.DisplayNextMonth">
+      <summary>Represents the DisplayNextMonth command, which requests that the next month be displayed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.DisplayNextYear">
+      <summary>Represents the DisplayNextYear command, which requests that the next year be displayed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.DisplayPreviousMonth">
+      <summary>Represents the DisplayPreviousMonth command, which requests that the previous month be displayed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.DisplayPreviousYear">
+      <summary>Represents the DisplayPreviousYear command, which requests that the previous year be displayed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.DisplayToday">
+      <summary>Represents the DisplayToday command, which requests that the present date ("Today") be displayed.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectNextDay">
+      <summary>Represents the SelectNextDay command, which requests that the next day be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectNextMonth">
+      <summary>Represents the SelectNextMonth command, which requests that the same day in the next month be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectNextWeek">
+      <summary>Represents the SelectNextWeek command, which requests that the same day in the next week be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectNextYear">
+      <summary>Represents that SelectNextYear command, which requests that the same day in the next year be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectPreviousDay">
+      <summary>Represents the SelectPreviousDay command, which requests that the previous day be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectPreviousMonth">
+      <summary>Represents the SelectPreviousMonth command, which requests that the same day in the previous month be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectPreviousWeek">
+      <summary>Represents the SelectPreviousWeek command, which requests that the same day in the previous week be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectPreviousYear">
+      <summary>Represents the SelectPreviousYear command, which requests that the same day in the previous year be selected.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DatePickerCommands.SelectToday">
+      <summary>Represents the SelectToday command, which requests that the present date ("Today") be selected.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateTimeTextBox.GetFullFormatSpecifier(Xceed.Wpf.Controls.DateTimeMaskMode,System.IFormatProvider)">
+      <summary>Retrieves the full format specifier for the specified DateTimeMaskMode and
+format provider.</summary>
+      <exception caption="" cref="System.NotSupportedException">DateTimeMaskMode.Custom is not a supported value.</exception>
+      <param name="dateTimeMaskMode">A DateTimeMaskMode value representing the mode that was used to mask the
+inputted text.</param>
+      <param name="formatProvider">The <strong>IFormatProvider</strong> that will be used to create the format specifier.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.DateTimeTextBox.OnInitialized(System.EventArgs)">
+      <summary>Raises the <strong>Initialized</strong> event.</summary>
+      <param name="e">An <strong>EventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DateTimeTextBox.CustomFormatSpecifier">
+      <summary>Gets or sets the custom format specifier that will be used to mask the inputted text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.DateTimeTextBox.DateTimeMaskMode">
+      <summary>Gets or sets a value indicating the date and time mask to apply to the inputted text.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeTextBox.CustomFormatSpecifierProperty">
+      <summary>Identifies the CustomFormatSpecifier dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.DateTimeTextBox.DateTimeMaskModeProperty">
+      <summary>Identifies the DateTimeMaskMode dependency property.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.Licenser.LicenseKey">
+      <summary>Gets or sets the license key used to license the classes contained in the Xceed.Wpf.Controls assembly.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.GetMaskCharacters">
+      <summary>Retrieves the mask characters that are supported by the masked text box.</summary>
+      <returns>An array of characters containing the mask characters that are supported by the masked text box (see Remarks).</returns>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.OnAutoCompletingMask(Xceed.Wpf.Controls.AutoCompletingMaskEventArgs)">
+      <summary>Raises the AutoCompletingMask event.</summary>
+      <param name="e">An AutoCompletingMaskEventArgs that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.OnDragEnter(System.Windows.DragEventArgs)">
+      <summary>Called when an unhandled <strong>DragEnter</strong> attached routed event reaches this element.</summary>
+      <param name="e">A <strong>DragEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.OnDragOver(System.Windows.DragEventArgs)">
+      <summary>Called when an unhandled <strong>DragOver</strong> attached routed event reaches this element.</summary>
+      <param name="e">A <strong>DragEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.OnInitialized(System.EventArgs)">
+      <summary>Raises the <strong>Initialized</strong> event.</summary>
+      <param name="e">An <strong>EventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.ValidateValue(System.Object)">
+      <summary>Validates the specified <em>value</em> to ensure that it fits in the mask specified by the Mask property.</summary>
+      <param name="value">The value to validated.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.CreateMaskedTextProvider(System.String,System.Globalization.CultureInfo,System.Boolean,System.Char,System.Char,System.Boolean)">
+      <summary>Creates the masked-text provider that will be used by the masked text box specifying various settings.</summary>
+      <param name="mask">
+        <para>The string that will be used as the input mask.</para>
+      </param>
+      <param name="cultureInfo">
+        <para>The <strong>CultureInfo</strong> that will be used by the masked-text provider.</para>
+      </param>
+      <param name="allowPromptAsInput">
+        <strong>true</strong> if the prompt char should be considered as a valid input character; <strong>false</strong>, otherwise. By default, <strong>true</strong>.</param>
+      <param name="promptChar">A character that represents the positions in the masked text box that require input. By default, "_"­ (underscore).</param>
+      <param name="passwordChar">A character that represents the character to used to mask a password.</param>
+      <param name="restrictToAscii">
+        <strong>true</strong> if non-ASCII <span class="dxMisspelled" id="dxMisspelled" word="characters">characters are accepted; <strong>false</strong> otherwise. By
+default, <strong>false</strong>.</span></param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.MaskedTextBox.GetFormatSpecifierFromMask(System.String,System.IFormatProvider)">
+      <summary>Retrieves a format specifier from the specified mask and format provider.</summary>
+      <param name="mask">The mask from which the format specifier is to be extracted.</param>
+      <param name="formatProvider">An <strong>IFormatProvider</strong> that will be used to extract the appropriate symbols for any numeric mask characters contained in the mask.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.AllowPromptAsInput">
+      <summary>Gets or sets a value indicating if the prompt character should be
+considered as a valid input character.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.ClipboardMaskFormat">
+      <summary>Gets or sets a value representing the mask format that will be used when the inputted text is copied to the clipboard.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.HidePromptOnLeave">
+      <summary>Gets or sets a value indicating if the prompt character is hidden when
+the masked text box loses focus.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.IncludeLiteralsInValue">
+      <summary>Gets or sets a value indicating if literal characters in the input mask should be used to calculate the numeric value of the input text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.InsertKeyMode">
+      <summary>Gets or sets a value representing the text insertion mode of the masked text box.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.IsMaskCompleted">
+      <summary>Gets a value indicating if all <strong>required</strong> characters have been inputted into the mask.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.IsMaskFull">
+      <summary>Gets a value indicating if all characters, required and optional, have been inputted into the mask.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.Mask">
+      <summary>Gets or sets the input mask.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.PromptChar">
+      <summary>Gets or sets the character that represents the positions in the masked text box that require user input.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.RejectInputOnFirstFailure">
+      <summary>Gets or sets a value indicating if inputted text that is pasted into the masked text box can be rejected if it contains an invalid character for the
+corresponding mask position.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.ResetOnPrompt">
+      <summary>Gets or sets a value indicating if the character at the current caret position should be reset when the prompt character is pressed.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.ResetOnSpace">
+      <summary>Gets or sets a value indicating if the character at the current caret position should be reset when the space bar is pressed.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.RestrictToAscii">
+      <summary>Gets or sets a value indicating ig the masked text box accepts non-ASCII characters.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.MaskedTextBox.SkipLiterals">
+      <summary>Gets or sets a value indicating if literal values can be overwritten by their same values</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.AllowPromptAsInputProperty">
+      <summary>Identifies the AllowPromptAsInput dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.ClipboardMaskFormatProperty">
+      <summary>Identifies the ClipboardMaskFormat dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.HidePromptOnLeaveProperty">
+      <summary>Identifies the HidePromptOnLeave dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.IncludeLiteralsInValueProperty">
+      <summary>Identifies the IncludeLiteralsInValue dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.InsertKeyModeProperty">
+      <summary>Identifies the InsertKeyMode dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.IsMaskCompletedProperty">
+      <summary>Identifies the IsMaskCompleted dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.IsMaskFullProperty">
+      <summary>Identifies the IsMaskFull dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.MaskProperty">
+      <summary>Identifies the Mask dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.PromptCharProperty">
+      <summary>Identifies the PromptChar dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.RejectInputOnFirstFailureProperty">
+      <summary>Identifies the RejectInputOnFirstFailure dependency
+property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.ResetOnPromptProperty">
+      <summary>Identifies the ResetOnPrompt dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.ResetOnSpaceProperty">
+      <summary>Identifies the ResetOnSpace dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.RestrictToAsciiProperty">
+      <summary>Identifies the RestrictToAscii dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.MaskedTextBox.SkipLiteralsProperty">
+      <summary>Identifies the SkipLiterals dependency property.</summary>
+    </member>
+    <member name="E:Xceed.Wpf.Controls.MaskedTextBox.AutoCompletingMask">
+      <summary>Raised when a mask is being automatically created.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.NavigableComboBox.#ctor">
+      <summary>Initializes a new instance of the NavigableComboBox class.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.NavigableComboBox.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewKeyDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.NavigableComboBox.OnPreviewMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewMouseWheel</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>MouseWheelEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.NumericInputScope.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewKeyDown</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>KeyEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.NumericInputScope.OnPreviewTextInput(System.Windows.Input.TextCompositionEventArgs)">
+      <summary>Invoked when an unhandled <strong>PreviewTextInput</strong> attached event reaches this element in its route.</summary>
+      <param name="e">A <strong>TextCompositionEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.NumericTextBox.OnInitialized(System.EventArgs)">
+      <summary>Raises the <strong>Initialized</strong> event.</summary>
+      <param name="e">An <strong>EventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.NumericTextBox.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+      <summary>Called when an unhandled <strong>TextInput</strong> event reaches this element.</summary>
+      <param name="e">A <strong>TextCompositionEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.NumericTextBox.CustomDecimalKeys">
+      <summary>Gets or sets a list of custom decimal keys.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.NumericTextBox.NumberStyles">
+      <summary>Gets or sets a value indicating the number styles that are supported by the numeric text box.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.NumericTextBox.NumberStylesProperty">
+      <summary>Identifies the NumberStyles dependency property.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryMoveFocusEventArgs.CanMoveFocus">
+      <summary>Gets or sets a value indicating if the focus can move.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryMoveFocusEventArgs.FocusNavigationDirection">
+      <summary>Gets a value indicating the direction in which the focus is attempting to navigate.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryMoveFocusEventArgs.ReachedMaxLength">
+      <summary>Gets a value indicating if the maximum allowed length of text has been reached.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.QueryTextFromValueEventArgs.#ctor(System.Object,System.String)">
+      <summary>Initializes a new instance of the <strong>QueryTextFromValueEventArgs</strong> class specifying the value whose string representation is to be extracted.</summary>
+      <param name="value">An object representing the value whose string representation is to be extracted.</param>
+      <param name="text">The string representation of <em>value</em>.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryTextFromValueEventArgs.Text">
+      <summary>Gets or sets the string representation of the specified value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryTextFromValueEventArgs.Value">
+      <summary>Gets an object representing the value whose string representation is to be extracted.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.QueryValueFromTextEventArgs.#ctor(System.String,System.Object)">
+      <summary>Initializes a new instance of the <strong>QueryValueFromTextEventArgs</strong> class specifying the text from which a value is to be extracted.</summary>
+      <param name="text">A string representing the text to be converted.</param>
+      <param name="value">The converted value. Can be a null reference (<b>Nothing</b> in Visual Basic) if a value could not be extracted from <em>text</em>.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryValueFromTextEventArgs.HasParsingError">
+      <summary>Gets or sets a value indicating a value was successfully extracted from the specified text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryValueFromTextEventArgs.Text">
+      <summary>Gets the text to be converted.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.QueryValueFromTextEventArgs.Value">
+      <summary>Gets or sets the converted value.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.TextBlockLite.#ctor">
+      <summary>Initializes a new instance of the <strong>TextBlockLite</strong> class.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.Background">
+      <summary>Gets or sets the Brush to apply to the background of this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.FontFamily">
+      <summary>Gets or sets the font family to apply to the text in this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.FontSize">
+      <summary>Gets or sets the font size to apply to the text in this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.FontStretch">
+      <summary>Gets or sets the font stretch to apply to the text in this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.FontStyle">
+      <summary>Gets or sets the font style to apply to the text in this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.FontWeight">
+      <summary>Gets or sets the font weight to apply to the text in this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.Foreground">
+      <summary>Gets or sets the Brush to apply to the foreground of this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.Text">
+      <summary>Gets or sets the text contents of this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.TextTrimming">
+      <summary>Gets or sets the text trimming behavior to use when the content overflows.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.TextWrapping">
+      <summary>Gets or sets how the text should be wrapped in this TextBlockLite.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.TextBlockLite.VisualChildrenCount">
+      <summary>Gets the number of visual children hosted by this TextBlockLite.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.BackgroundProperty">
+      <summary>Identifies the Background dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.FontFamilyProperty">
+      <summary>Identifies the FontFamily dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.FontSizeProperty">
+      <summary>Identifies the FontSize dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.FontStretchProperty">
+      <summary>Identifies the FontStretch dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.FontStyleProperty">
+      <summary>Identifies the FontStyle dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.FontWeightProperty">
+      <summary>Identifies the FontWeight dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.ForegroundProperty">
+      <summary>Identifies the Foreground dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.TextProperty">
+      <summary>Identifies the Text dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.TextTrimmingProperty">
+      <summary>Identifies the TextTrimming dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.TextBlockLite.TextWrappingProperty">
+      <summary>Identifies the TextWrapping dependency property.</summary>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.ValueRangeTextBox.OnGotFocus(System.Windows.RoutedEventArgs)">
+      <summary>Called when an unhandled <strong>GotFocus</strong> event reaches this element.</summary>
+      <param name="e">A <strong>RoutedEventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.ValueRangeTextBox.OnInitialized(System.EventArgs)">
+      <summary>Raises the <strong>Initialized</strong> event.</summary>
+      <param name="e">An <strong>EventArgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.ValueRangeTextBox.OnLostFocus(System.Windows.RoutedEventArgs)">
+      <summary>Raises the <strong>LostFocus</strong> event.</summary>
+      <param name="e">A <strong>RoutedEventAgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.ValueRangeTextBox.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+      <summary>Raises the <strong>PreviewKeyDown</strong> event.</summary>
+      <param name="e">A <strong>RoutedEventAgs</strong> that contains the event data.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.ValueRangeTextBox.QueryTextFromValueCore(System.Object)">
+      <summary>Queries the specified <em>value</em> and returns its string representation.</summary>
+      <param name="value">An object representing the value whose string representation is to be returned.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.ValueRangeTextBox.QueryValueFromTextCore(System.String,System.Object@)">
+      <summary>Queries the specified <em>text</em> and returns its corresponding <em>value</em> converted to the type specified by the ValueDataType property and according to the format defined by the
+<see cref="Xceed.Wpf.Controls.v6.5~Xceed.Wpf.Controls.ValueRangeTextBox~FormatProvider.html">FormatProvider</see> property.</summary>
+      <returns>
+        <strong>true</strong> if a value was extracted from the specified <em>text</em>; <strong>false</strong> otherwise.</returns>
+      <param name="text">A string representing the text to be converted.</param>
+      <param name="value">The converted value. Can be a null reference (<b>Nothing</b> in Visual Basic) if a value could not be extracted from <em>text</em>.</param>
+    </member>
+    <member name="M:Xceed.Wpf.Controls.ValueRangeTextBox.ValidateValue(System.Object)">
+      <summary>Validates the specified value to ensure that it is of the type specified by the ValueDataType property and that it is greater than or equal to <see cref="Xceed.Wpf.Controls.v6.5~Xceed.Wpf.Controls.ValueRangeTextBox~MinValue.html">MinValue</see> and less than or equal to <see cref="Xceed.Wpf.Controls.v6.5~Xceed.Wpf.Controls.ValueRangeTextBox~MaxValue.html">MaxValue</see>.</summary>
+      <exception caption="" cref="System.InvalidOperationException">An attempt was made to set a value when the ValueDataType property is null.The value if not of the type defined by the ValueDataType property.The specified value must be greater than or equal to MinValue and less than or equal to MaxValue.</exception>
+      <param name="value">The value to validate.</param>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.BeepOnError">
+      <summary>Gets or sets a value indicating if a system beep is raised when an inputted character is rejected.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.FormatProvider">
+      <summary>Gets or sets the <strong>IFormatProvider</strong> that will be used to perform type validation.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.HasParsingError">
+      <summary>Gets a value indicating that an error occurred while parsing the inputted text.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.HasValidationError">
+      <summary>Gets a value indicating whether an error occurred during the validation of the value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.IsValueOutOfRange">
+      <summary>Gets a value indicating if the value is out of range.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.MaxValue">
+      <summary>Gets or sets the maximum accepted value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.MinValue">
+      <summary>Gets or sets the minimum accepted value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.NullValue">
+      <summary>Gets or sets a value representing the control's <strong>null</strong> value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.Value">
+      <summary>Gets or sets the control's value.</summary>
+    </member>
+    <member name="P:Xceed.Wpf.Controls.ValueRangeTextBox.ValueDataType">
+      <summary>Gets or sets the type of the control's value.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.BeepOnErrorProperty">
+      <summary>Identifies the BeepOnError dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.FormatProviderProperty">
+      <summary>Identifies the FormatProvider dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.HasParsingErrorProperty">
+      <summary>Identifies the HasParsingError dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.HasValidationErrorProperty">
+      <summary>Identifies the HasValidationError dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.IsValueOutOfRangeProperty">
+      <summary>Identifies the IsValueOutOfRange dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.MaxValueProperty">
+      <summary>Identifies the MaxValue dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.MinValueProperty">
+      <summary>Identifies the MinValue dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.NullValueProperty">
+      <summary>Identifies the NullValue dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.ValueDataTypeProperty">
+      <summary>Identifies the ValueDataType dependency property.</summary>
+    </member>
+    <member name="F:Xceed.Wpf.Controls.ValueRangeTextBox.ValueProperty">
+      <summary>Identifies the Value dependency property.</summary>
+    </member>
+    <member name="E:Xceed.Wpf.Controls.ValueRangeTextBox.QueryTextFromValue">
+      <summary>Raised when a value is being queried to return its string representation.</summary>
+    </member>
+    <member name="E:Xceed.Wpf.Controls.ValueRangeTextBox.QueryValueFromText">
+      <summary>Raised when inputted text is queried to return its corresponding value</summary>
+    </member>
+    <member name="T:Xceed.Wpf.Controls.QueryMoveFocusEventHandler">
+      <summary>Represents the method that will handle the QueryMoveFocus
+routed event.</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,5 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WorkflowSize\obj\Debug\WorkflowAnalyzer.WorkflowSize.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.WorkflowSize.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.WorkflowSize.pdb
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WorkflowSize\obj\Debug\WorkflowAnalyzer.WorkflowSize.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.WorkflowSize\obj\Debug\WorkflowAnalyzer.WorkflowSize.pdb

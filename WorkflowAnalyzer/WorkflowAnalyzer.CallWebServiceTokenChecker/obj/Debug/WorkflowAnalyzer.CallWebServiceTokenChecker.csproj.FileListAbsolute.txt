@@ -1,0 +1,5 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.CallWebServiceTokenChecker\obj\Debug\WorkflowAnalyzer.CallWebServiceTokenChecker.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.CallWebServiceTokenChecker.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\Plugins\WorkflowAnalyzer.CallWebServiceTokenChecker.pdb
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.CallWebServiceTokenChecker\obj\Debug\WorkflowAnalyzer.CallWebServiceTokenChecker.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.CallWebServiceTokenChecker\obj\Debug\WorkflowAnalyzer.CallWebServiceTokenChecker.pdb
