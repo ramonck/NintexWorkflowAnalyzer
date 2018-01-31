@@ -3,6 +3,7 @@ Since the Nintex Workflow Analyzer stopped working in Codeplex, I have recompile
 
 You can use the binary directly in the release.
 
-The NuGet packages that are pre-requisites for this project are:
-Xceed.Products.Wpf.DataGrid.Full
-jacobslusser.ScintillaNET
+The NuGet packages that are pre-requisites for this project are:<br/>
+- Xceed.Products.Wpf.DataGrid.Full
+<br/>
+- jacobslusser.ScintillaNET
