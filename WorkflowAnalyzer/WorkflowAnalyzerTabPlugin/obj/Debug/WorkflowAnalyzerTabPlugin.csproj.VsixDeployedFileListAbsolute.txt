@@ -1,0 +1,3 @@
+D:\Users\bratnkr1\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Aaron Labiosa\Workflow Analyzer Tab\1.0\\extension.vsixmanifest
+D:\Users\bratnkr1\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Aaron Labiosa\Workflow Analyzer Tab\1.0\ProjectTemplates\\Workflow Analyzer Tab.zip
+D:\Users\bratnkr1\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Aaron Labiosa\Workflow Analyzer Tab\1.0\\__TemplateIcon.ico

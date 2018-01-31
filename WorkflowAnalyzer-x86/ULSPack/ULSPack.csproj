@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD415E4A-AC9F-4098-8555-B489CB68AA2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ULSPack</RootNamespace>
+    <AssemblyName>ULSPack</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.DataGrid">
+      <HintPath>..\..\References\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseFilterQuery.cs" />
+    <Compile Include="BaseULSFilter.cs" />
+    <Compile Include="ColumnTypes.cs" />
+    <Compile Include="Controls\ULSLogEntriesGridControlV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ULSLogEntriesGridControlV2.Designer.cs">
+      <DependentUpon>ULSLogEntriesGridControlV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ULSEntryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ULSEntryControl.Designer.cs">
+      <DependentUpon>ULSEntryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ULSLogEntriesGridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ULSLogEntriesGridControl.Designer.cs">
+      <DependentUpon>ULSLogEntriesGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterOperators.cs" />
+    <Compile Include="FilterRules\SearchFilter.cs" />
+    <Compile Include="FilterRules\TemplateFilter.cs" />
+    <Compile Include="Forms\AdvancedFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdvancedFilter.Designer.cs">
+      <DependentUpon>AdvancedFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EntryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EntryDetail.Designer.cs">
+      <DependentUpon>EntryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFilterQuery.cs" />
+    <Compile Include="ILogFilterRule.cs" />
+    <Compile Include="IQueryProcessor.cs" />
+    <Compile Include="BPARules\IULSBPARule.cs" />
+    <Compile Include="IULSFieldContext.cs" />
+    <Compile Include="IULSLogEntry.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryProcessor.cs" />
+    <Compile Include="ULSFieldContext.cs" />
+    <Compile Include="ULSLogEntry.cs" />
+    <Compile Include="ULSQuery.cs" />
+    <Compile Include="WorkflowInstanceParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SupportPackage\SupportPackage.csproj">
+      <Project>{390d26e4-0cec-40bf-8df2-5fbba877131a}</Project>
+      <Name>SupportPackage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ULSLogEntriesGridControlV2.resx">
+      <DependentUpon>ULSLogEntriesGridControlV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ULSEntryControl.resx">
+      <DependentUpon>ULSEntryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ULSLogEntriesGridControl.resx">
+      <DependentUpon>ULSLogEntriesGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdvancedFilter.resx">
+      <DependentUpon>AdvancedFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EntryDetail.resx">
+      <DependentUpon>EntryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

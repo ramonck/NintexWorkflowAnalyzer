@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="WorkflowAnalyzer.Controls.ActionIconWpf"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Width="164" Height="103" Background="#FFFFC080">
+    <Grid Margin="0,0,95,95">
+        <Image x:Name="ActionIconPictureBox" Margin="0,29,-37,-69" Width="48" RenderTransformOrigin="0.604,1.229" HorizontalAlignment="Right" Height="48" VerticalAlignment="Top">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="../Assets/Image/Error.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <TextBox x:Name="TLabelTextbox" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Margin="10,0,-86,-16"/>
+        <TextBox x:Name="LLabelTextbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" Margin="10,43,0,-58"/>
+        <TextBox x:Name="RLabelTextbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" Margin="112,43,-86,-58"/>
+        <TextBox x:Name="BLabelTextbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Margin="58,77,-37,-92"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,17 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\bin\Debug\WorkflowAnalyzer.exe.config
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\Controls\ActionIconWpf.baml
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\Controls\ActionIconWpf.g.cs
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer_Content.g.cs
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer_MarkupCompile.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.g.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Controls.ActionIcon.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Controls.Parameter.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Forms.ActionConfigurationForm.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Forms.FormControlConfiguration.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Forms.ParameterForm.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Forms.testingwpf.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Forms.WfaMain.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Properties.Resources.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.Forms.RegExForm.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer\obj\x86\Debug\WorkflowAnalyzer.csproj.GenerateResource.Cache

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{390D26E4-0CEC-40BF-8DF2-5FBBA877131A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SupportPackage</RootNamespace>
+    <AssemblyName>SupportPackage</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AlternateAccessMappingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AlternateAccessMappingControl.Designer.cs">
+      <DependentUpon>AlternateAccessMappingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AlternateAccessMappingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AlternateAccessMappingsControl.Designer.cs">
+      <DependentUpon>AlternateAccessMappingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EmailSettingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EmailSettingControl.Designer.cs">
+      <DependentUpon>EmailSettingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FarmFeatureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FarmFeatureControl.Designer.cs">
+      <DependentUpon>FarmFeatureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FarmSolutionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FarmSolutionControl.Designer.cs">
+      <DependentUpon>FarmSolutionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FarmSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FarmSummaryControl.Designer.cs">
+      <DependentUpon>FarmSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NintexContentDatabaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NintexContentDatabaseControl.Designer.cs">
+      <DependentUpon>NintexContentDatabaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NintexDatabaseMappingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NintexDatabaseMappingControl.Designer.cs">
+      <DependentUpon>NintexDatabaseMappingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NintexDatabaseSetupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NintexDatabaseSetupControl.Designer.cs">
+      <DependentUpon>NintexDatabaseSetupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NintexGlobalSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NintexGlobalSettingsControl.Designer.cs">
+      <DependentUpon>NintexGlobalSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NintexLazyApprovalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NintexLazyApprovalControl.Designer.cs">
+      <DependentUpon>NintexLazyApprovalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NintexLiveWorkflowSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NintexLiveWorkflowSettingsControl.Designer.cs">
+      <DependentUpon>NintexLiveWorkflowSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSummaryMoreInfo.cs" />
+    <Compile Include="Forms\FarmSolutionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FarmSolutionDetail.Designer.cs">
+      <DependentUpon>FarmSolutionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FarmSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FarmSummaryForm.Designer.cs">
+      <DependentUpon>FarmSummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMoreInfoControlContext.cs" />
+    <Compile Include="Controls\MoreInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MoreInfoControl.Designer.cs">
+      <DependentUpon>MoreInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SharePointServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SharePointServer.Designer.cs">
+      <DependentUpon>SharePointServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ValidationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationControl.Designer.cs">
+      <DependentUpon>ValidationControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AlternateAccessMappingControl.resx">
+      <DependentUpon>AlternateAccessMappingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AlternateAccessMappingsControl.resx">
+      <DependentUpon>AlternateAccessMappingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EmailSettingControl.resx">
+      <DependentUpon>EmailSettingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FarmFeatureControl.resx">
+      <DependentUpon>FarmFeatureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FarmSolutionControl.resx">
+      <DependentUpon>FarmSolutionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FarmSummaryControl.resx">
+      <DependentUpon>FarmSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MoreInfoControl.resx">
+      <DependentUpon>MoreInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NintexContentDatabaseControl.resx">
+      <DependentUpon>NintexContentDatabaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NintexDatabaseMappingControl.resx">
+      <DependentUpon>NintexDatabaseMappingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NintexDatabaseSetupControl.resx">
+      <DependentUpon>NintexDatabaseSetupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NintexGlobalSettingsControl.resx">
+      <DependentUpon>NintexGlobalSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NintexLazyApprovalControl.resx">
+      <DependentUpon>NintexLazyApprovalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NintexLiveWorkflowSettingsControl.resx">
+      <DependentUpon>NintexLiveWorkflowSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FarmSolutionDetail.resx">
+      <DependentUpon>FarmSolutionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FarmSummaryForm.resx">
+      <DependentUpon>FarmSummaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SharePointServer.resx">
+      <DependentUpon>SharePointServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ValidationControl.resx">
+      <DependentUpon>ValidationControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginManager\PluginManager.csproj">
+      <Project>{5FE0F7B4-A271-4DA8-B7F4-AD33DCF3C6B1}</Project>
+      <Name>PluginManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Success.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

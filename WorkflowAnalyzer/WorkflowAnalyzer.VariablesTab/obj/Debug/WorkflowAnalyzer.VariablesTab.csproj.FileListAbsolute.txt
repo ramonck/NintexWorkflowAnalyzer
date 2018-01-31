@@ -1,0 +1,2 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.VariablesTab\obj\Debug\WorkflowAnalyzer.VariablesTab.Properties.Resources.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.VariablesTab\obj\Debug\WorkflowAnalyzer.VariablesTab.csproj.GenerateResource.Cache

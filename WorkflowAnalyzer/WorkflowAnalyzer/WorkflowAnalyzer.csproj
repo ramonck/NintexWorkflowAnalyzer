@@ -1,0 +1,1009 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39AA6A98-268E-447B-83CA-D11FAEFE2CE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WorkflowAnalyzer</RootNamespace>
+    <AssemblyName>WorkflowAnalyzer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\WorkflowAnalyzer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <InstallUrl>https://WorkflowAnalyzer.codeplex.com/releases/clickonce/</InstallUrl>
+    <UpdateUrl>https://WorkflowAnalyzer.codeplex.com/releases/clickonce/</UpdateUrl>
+    <SupportUrl>http://workflowanalyzer.codeplex.com</SupportUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Workflow Analyzer</ProductName>
+    <PublisherName>Aaron Labiosa</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>39</ApplicationRevision>
+    <ApplicationVersion>1.4.0.39</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\WorkflowAnalyzer.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A2B25B3B42A12D59FA1615A714C5945D55C8413C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WorkflowAnalyzer_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>5.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WorkflowAnalyzer.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ScintillaNET">
+      <HintPath>..\..\..\..\Libraries\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.DataGrid">
+      <HintPath>..\..\..\..\Libraries\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ActionIcon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ActionIcon.Designer.cs">
+      <DependentUpon>ActionIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ActionIconWpf.xaml.cs">
+      <DependentUpon>ActionIconWpf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parameter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Parameter.Designer.cs">
+      <DependentUpon>Parameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileHandler.cs" />
+    <Compile Include="FileTypes.cs" />
+    <Compile Include="Forms\ActionConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActionConfigurationForm.Designer.cs">
+      <DependentUpon>ActionConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormControlConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormControlConfiguration.Designer.cs">
+      <DependentUpon>FormControlConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParameterForm.Designer.cs">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\testingwpf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\testingwpf.Designer.cs">
+      <DependentUpon>testingwpf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INWFContext.cs" />
+    <Compile Include="INWFXPath.cs" />
+    <Compile Include="IMainFormContext.cs" />
+    <Compile Include="NFContext.cs" />
+    <Compile Include="NWFContext.cs" />
+    <Compile Include="Tabs\ActionTab.cs" />
+    <Compile Include="BPADocument.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="IBpaDefinition.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="NWFHandler.cs" />
+    <Compile Include="NWFWrapper.cs" />
+    <Compile Include="Forms\WfaMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WfaMain.Designer.cs">
+      <DependentUpon>WfaMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\RegExForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegExForm.Designer.cs">
+      <DependentUpon>RegExForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemWrapper.cs" />
+    <Compile Include="Tabs\FarmTopologyTab.cs" />
+    <Compile Include="Tabs\GraphicalFormsTab.cs" />
+    <Compile Include="Tabs\GraphicalTabV2.cs" />
+    <Compile Include="Tabs\ITabContext.cs" />
+    <Compile Include="TabFactory.cs" />
+    <Compile Include="Tabs\BpaTab.cs" />
+    <Compile Include="Tabs\EditorTab.cs" />
+    <Compile Include="Tabs\ExternalRefsTab.cs" />
+    <Compile Include="Tabs\ULSTab.cs" />
+    <Compile Include="Tabs\WebFarmSummaryTab.cs" />
+    <Compile Include="Tabs\GraphicalTab.cs" />
+    <Compile Include="Tabs\WebNintexProductsTab.cs" />
+    <Compile Include="Tabs\ParametersTab.cs" />
+    <Compile Include="UlsEntryListGenerator.cs" />
+    <Compile Include="ValidationHelper.cs" />
+    <Compile Include="Tabs\VariablesTab.cs" />
+    <Compile Include="Tabs\WebTabBase.cs" />
+    <EmbeddedResource Include="Controls\ActionIcon.resx">
+      <DependentUpon>ActionIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Parameter.resx">
+      <DependentUpon>Parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActionConfigurationForm.resx">
+      <DependentUpon>ActionConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormControlConfiguration.resx">
+      <DependentUpon>FormControlConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParameterForm.resx">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\testingwpf.resx">
+      <DependentUpon>testingwpf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WfaMain.resx">
+      <DependentUpon>WfaMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\RegExForm.resx">
+      <DependentUpon>RegExForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="5.ico" />
+    <Content Include="Assets\Asset_Directory.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\css\BPA_CSS.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\css\ui-lightness\jquery-ui-1.10.4.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\css\ui-lightness\jquery-ui-1.10.4.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Image\Error.png" />
+    <Content Include="Assets\Image\Success.png" />
+    <Content Include="Assets\js\BPA_JS.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\js\Forms.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\js\jquery-1.10.2.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\js\jquery-ui-1.10.4.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\js\jquery-ui-1.10.4.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Forms.xsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="graphical.xsl">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WorkflowAnalyzer_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="4.ico" />
+    <Content Include="BPA.xsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="defaultss.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Graphical.css" />
+    <Content Include="nfimages\AttachmentFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\BooleanFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ButtonFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\CalculationFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ChangeContentTypeFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ChoiceFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\DateTimeFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ExternalDataColumnControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\FrameFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\GeoLocationFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\HtmlFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\HyperLinkColumnFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ImageFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\LabelFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\LineFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ListItemFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ListViewFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\MultiLineTextBoxFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\PanelFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\PeoplePickerFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\RepeaterFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\SharePointLookupFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\TaxonomyFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\TextBoxFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nfimages\ViewWorkflowFormControlProperties.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\Install_Plugins_Here.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.ActionCounter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.BatchChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.DBLogInLoopChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.NestedLogInLoopChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.ParallelChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.RecursiveCheck.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.StateMachineChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.StoredCredentialChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.TimingChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.VersionChecker.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\WorkflowAnalyzer.WorkflowSize.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="SciLexer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SciLexer64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ScintillaNET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\AddToMemberGroup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\downarrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.WFIfElseBranchAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWStartWorkflow2Adapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\CopyToWeb.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\CreateMemberGroup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\DeleteMemberGroup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\EndWorkflow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\EndWorkflowMarker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\CustomAction.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\ManageWorkflows.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWAddUserToADGroupAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWApproverAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWAssignTodoTaskAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWBDCQueryAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWBuildStringAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWBusinessProcessAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCalculateDateAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCallWebServiceAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCancelWorkflowAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCheckInItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCheckInItemWithKeyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCollectDataAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCollectionAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCommitAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCompileAudienceAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCompleteNWTaskAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWConvertDocumentAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCopyToFolderAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCopyToSharepointSite2Adapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateADAccountAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateADSecurityGroupAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateAudienceAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateCRMEntityRecordAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateItemWithContentTypesAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateListAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateSiteCollectionAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateSiteSpecificItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWCreateWebAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDecommissionUserAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDelayForAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDelegateNWTaskAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteADSecurityGroupAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteAudienceAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteCRMEntitiesAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteMultipleItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteSiteCollectionAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWDeleteWebAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWEnableLCSOnADAccountAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWExchangeCreateAppointmentAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWExchangeCreateTaskAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWFilterAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWForEachLoopAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWGetMeetingSuggestionsAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWGetUsersByStatusAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWGetUserStatusAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWIterateAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWLoopAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWMOSSSearchQueryAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWMultiOutcomeAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWParseValueAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWProvisionExchangeUserEmailAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWPublishPendingWorkflowAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryCRMEntitiesAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryExcelWebServiceAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryLdapAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryListAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWQueryUserProfileStoreAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWReadDocumentAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWReadXmlAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWRegularExpressionAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWRemoveUserFromADGroupAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWRetrieveDataAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWReviewAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWRunIf2Adapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWRunIfAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWRunSqlAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWSendMessageAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWSendReceiveMessageAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWSetItemPermissions.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWSetModerationStatusAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWStartWorkflowAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWStateChangeAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWStateMachine2Adapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWStateMachineAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWStoreDataAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWSubmitRecordAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWSwitchAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWSwitchBranchAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWTaskReminderAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateADAccountAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateCRMRecordAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateDocumentAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateMultipleItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateUserProfileAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWUpdateXmlAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWWebRequestAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWWorkflowVariablesAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.NWWriteToHistoryListAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPCaptureVersionOfDocumentSetAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPCheckInItemWithKeyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPCheckOutItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPCheckOutItemWithKeyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPCopyItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPDeclareRecordAdaptor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPDelayForAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPDelayUntilAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPDeleteDraftsAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPDeleteItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPDeleteItemWithKeyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPDeletePreviousVersionsAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPMathAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPSendDocumentSetToRepositoryAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPSendDocumentToRepositoryAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPSetContentApprovalStatusForDocumentSetAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPSetCustomWorkflowStatusAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPSetFieldAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPSetFieldWithKeyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPSetVariableAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPUndeclareRecordAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPUndoCheckOutItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPUpdateItemAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPUpdateItemWithKeyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPWaitForAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPWaitForDocumentStatusAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.SPWaitForWithKeyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.WFIfElseAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.WFParallelAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.WFSequenceAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.WFTerminateAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.Activities.Adapters.WFWhileAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSChangeEPTAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSCompareProjectPropertyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSEventContextAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSOnProjectCheckinAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSOnProjectCommitAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSOnProjectSubmitAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSQueryPSIAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSQueueProjectPublishAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSReadProjectPropertyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSReadProjectSecurityGroupMembersAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSSetProjectStageAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSUpdateProjectFieldForProjectAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSUpdateProjectPropertyAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.ProjectServer.Adapters.PSUpdateProjectStageStatusAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\Nintex.Workflow.UserDefinedActions.UserDefinedActionWrapperAdapter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\RemoveFromMemberGroup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\RequestApproval-rtl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\requestdata.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\SetProjectStage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\UndoCheckout.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\UpdateItem.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\UserDefinedActionUnavailable.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\WaitForDocumentStatus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\WaitForUpdate.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wfimages\WorkflowVariables.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".log">
+      <Visible>False</Visible>
+      <Description>SharePoint ULS Log</Description>
+      <Progid>WorkflowAnalyzer</Progid>
+      <DefaultIcon>5.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".nwf">
+      <Visible>False</Visible>
+      <Description>Nintex Workflow Export</Description>
+      <Progid>WorkflowAnalyzer</Progid>
+      <DefaultIcon>5.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".zip">
+      <Visible>False</Visible>
+      <Description>Nintex Support Package</Description>
+      <Progid>WorkflowAnalyzer</Progid>
+      <DefaultIcon>5.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="PluginManager.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="WorkflowAnalyzer.XML">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginManager\PluginManager.csproj">
+      <Project>{5fe0f7b4-a271-4da8-b7f4-ad33dcf3c6b1}</Project>
+      <Name>PluginManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportPackage\SupportPackage.csproj">
+      <Project>{390d26e4-0cec-40bf-8df2-5fbba877131a}</Project>
+      <Name>SupportPackage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ULSPack\ULSPack.csproj">
+      <Project>{cd415e4a-ac9f-4098-8555-b489cb68aa2e}</Project>
+      <Name>ULSPack</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\ActionIconWpf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

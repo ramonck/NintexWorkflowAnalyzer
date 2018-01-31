@@ -1,0 +1,9 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\bin\Debug\ProjectTemplates\Workflow Analyzer Browser Tab.zip
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\bin\Debug\__TemplateIcon.ico
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\bin\Debug\Workflow Analyzer Browser Tab.zip
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\bin\Debug\WorkflowAnalyzerBrowserTabPlugin.vsix
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\bin\Debug\extension.vsixmanifest
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\obj\Debug\WorkflowAnalyzerBrowserTabPlugin.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\obj\Debug\WorkflowAnalyzerBrowserTabPlugin.dll
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\obj\Debug\WorkflowAnalyzerBrowserTabPlugin.pdb
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzerBrowserTabPlugin\obj\Debug\extension.vsixmanifest

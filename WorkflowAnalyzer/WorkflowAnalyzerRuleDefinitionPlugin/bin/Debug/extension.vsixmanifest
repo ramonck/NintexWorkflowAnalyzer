@@ -1,0 +1,19 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="WorkflowAnalyzerRuleDefinitionPlugin..be11e460-988d-46a5-beb6-09e081510bfb" Version="1.0" Language="en-US" Publisher="Aaron Labiosa" />
+    <DisplayName>Workflow Analyzer Rule Definition</DisplayName>
+    <Description xml:space="preserve">Workflow Analyzer Rule Definition</Description>
+    <Icon>__TemplateIcon.ico</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Version="[11.0,12.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[11.0,12.0)" Id="Microsoft.VisualStudio.Premium" />
+    <InstallationTarget Version="[11.0,12.0)" Id="Microsoft.VisualStudio.Ultimate" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="4.5" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+  </Assets>
+</PackageManifest>

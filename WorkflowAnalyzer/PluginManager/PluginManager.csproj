@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FE0F7B4-A271-4DA8-B7F4-AD33DCF3C6B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PluginManager</RootNamespace>
+    <AssemblyName>PluginManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\PluginManager.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExternalWebBrowserTabPluginBase.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="NF\FormControlLayout.cs" />
+    <Compile Include="NF\FormLayout.cs" />
+    <Compile Include="NF\FormControlProperties.cs" />
+    <Compile Include="NF\NFLiveSettings.cs" />
+    <Compile Include="NF\NintexFormsDocument.cs" />
+    <Compile Include="NF\Rule.cs" />
+    <Compile Include="NWF\ApproverFrom.cs" />
+    <Compile Include="NWF\AssociationColumn.cs" />
+    <Compile Include="NWF\NWAutoStartCondition.cs" />
+    <Compile Include="NWF\MessageAttachment.cs" />
+    <Compile Include="NWF\NWConditionalStart.cs" />
+    <Compile Include="NWF\NWMessage.cs" />
+    <Compile Include="NWF\Approver.cs" />
+    <Compile Include="NWF\NWActionConfig.cs" />
+    <Compile Include="NWF\ContentTypeReference.cs" />
+    <Compile Include="NWF\ExportedWorkflow.cs" />
+    <Compile Include="NWF\FieldReference.cs" />
+    <Compile Include="NWF\ListReference.cs" />
+    <Compile Include="NWF\NintexWorkflowDocument.cs" />
+    <Compile Include="NWF\NWConfigurations.cs" />
+    <Compile Include="NWF\NWOutcome.cs" />
+    <Compile Include="NWF\NWVariable.cs" />
+    <Compile Include="NWF\ApprovalOptions.cs" />
+    <Compile Include="NWF\Operand.cs" />
+    <Compile Include="NWF\Parameter.cs" />
+    <Compile Include="NWF\ParameterPrimitiveValue.cs" />
+    <Compile Include="NWF\User.cs" />
+    <Compile Include="NWF\ValueStorage.cs" />
+    <Compile Include="NWF\ValueStorages.cs" />
+    <Compile Include="RuleDefinition.cs" />
+    <Compile Include="ExternalTabPluginBase.cs" />
+    <Compile Include="RuleDefinitionPluginBase.cs" />
+    <Compile Include="PluginLoader.cs" />
+    <Compile Include="Plugins\IExternalExtension.cs" />
+    <Compile Include="Plugins\IPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupportPackage\DatabaseMapping.cs" />
+    <Compile Include="SupportPackage\FarmSummary.cs" />
+    <Compile Include="SupportPackage\GlobalSettings.cs" />
+    <Compile Include="SupportPackage\InstalledProductInfo.cs" />
+    <Compile Include="SupportPackage\InstantMessagingSettings.cs" />
+    <Compile Include="SupportPackage\LazyApprovalSettings.cs" />
+    <Compile Include="SupportPackage\LicenseInfo.cs" />
+    <Compile Include="SupportPackage\NintexFormsDatabaseSetup.cs" />
+    <Compile Include="SupportPackage\NintexLiveFormsSettings.cs" />
+    <Compile Include="SupportPackage\NintexPSIConnection.cs" />
+    <Compile Include="SupportPackage\NintexWorkflow4PSSettings.cs" />
+    <Compile Include="SupportPackage\NintexDatabaseSetup.cs" />
+    <Compile Include="SupportPackage\NintexEmailSettings.cs" />
+    <Compile Include="SupportPackage\NintexWorkflow4PSDatabaseSetup.cs" />
+    <Compile Include="SupportPackage\NintexFormsSettings.cs" />
+    <Compile Include="SupportPackage\NintexLiveWorkflowSettings.cs" />
+    <Compile Include="SupportPackage\NintexProductData.cs" />
+    <Compile Include="SupportPackage\NintexProductLicense.cs" />
+    <Compile Include="SupportPackage\NintexPWASite.cs" />
+    <Compile Include="SupportPackage\NintexSettings.cs" />
+    <Compile Include="SupportPackage\NintexWorkflowLog.cs" />
+    <Compile Include="SupportPackage\NintexWorkflowSettings.cs" />
+    <Compile Include="SupportPackage\SPSafeEmailServers.cs" />
+    <Compile Include="SupportPackage\SPAlternateAccessMapping.cs" />
+    <Compile Include="SupportPackage\SPDirectoryManagementService.cs" />
+    <Compile Include="SupportPackage\SPEmailSetting.cs" />
+    <Compile Include="SupportPackage\SPFeature.cs" />
+    <Compile Include="SupportPackage\SPPatchDetail.cs" />
+    <Compile Include="SupportPackage\SPService.cs" />
+    <Compile Include="SupportPackage\SPSolution.cs" />
+    <Compile Include="SupportPackage\SPIncomingEmail.cs" />
+    <Compile Include="SupportPackage\SPOutgoingEmail.cs" />
+    <Compile Include="SupportPackage\SPServer.cs" />
+    <Compile Include="SupportPackage\WorkflowInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

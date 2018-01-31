@@ -1,0 +1,8 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.csprojResolveAssemblyReference.cache
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.Controls.ULSLogEntriesGridControlV2.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.Controls.ULSEntryControl.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.Controls.ULSLogEntriesGridControl.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.Forms.AdvancedFilter.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.Forms.EntryDetail.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.Properties.Resources.resources
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\ULSPack\obj\Debug\ULSPack.csproj.GenerateResource.Cache

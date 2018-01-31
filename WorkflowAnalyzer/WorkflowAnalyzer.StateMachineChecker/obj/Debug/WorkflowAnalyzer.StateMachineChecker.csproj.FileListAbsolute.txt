@@ -1,0 +1,1 @@
+D:\Users\bratnkr1\Documents\NintexWorkflowAnalyzer\WorkflowAnalyzer\WorkflowAnalyzer.StateMachineChecker\obj\Debug\WorkflowAnalyzer.StateMachineChecker.csprojResolveAssemblyReference.cache
